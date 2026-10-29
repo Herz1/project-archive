@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>第一步参考研究 · RhineLabUI × Eidolon-SC</title>
+<meta name="description" content="两个开源项目与在线未登录页面的视觉、交互、代码研究，以及个人项目总首页的复用规范。">
+<style>
+:root{--paper:#f0eee9;--ink:#1b211c;--muted:#5c6259;--line:#c8c9bd;--gold:#8b642c;--dark:#11181b;--light:#eeecf2;--pad:clamp(20px,5vw,84px);color-scheme:light;font-family:"MiSans","PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:var(--paper);color:var(--ink);font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;font-size:16px;line-height:1.8}a{color:inherit;text-underline-offset:4px}button{font:inherit}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #a67d48;outline-offset:5px}img{max-width:100%;height:auto;display:block}h1,h2,h3,p,figure{margin:0}h1{font-size:clamp(36px,4.7vw,72px);line-height:1.15;letter-spacing:-.045em;font-weight:650}h2{font-size:clamp(26px,3vw,40px);line-height:1.35;letter-spacing:-.035em}h3{font-size:20px;line-height:1.5;margin-bottom:12px}p+p{margin-top:14px}.wrap{max-width:1440px;margin:auto;padding:0 var(--pad)}.eyebrow{font:12px/1.4 ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase}.mast{padding:28px var(--pad);display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.04em}.state{color:var(--gold);white-space:nowrap}.intro{padding-top:60px;padding-bottom:42px}.intro .eyebrow{margin-bottom:22px;color:var(--gold)}.lede{max-width:850px;font-size:clamp(18px,1.7vw,23px);line-height:1.8;margin-top:26px}.meta{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px 28px;font-size:12px;color:var(--muted)}.lead-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:38px}.lead-grid figure{background:#e8e5e1}.lead-grid figure:last-child{background:#020203;color:var(--light)}.lead-grid figcaption{padding:15px 20px}.lead-grid img{aspect-ratio:1.44;object-fit:contain}.lead-grid figcaption span{opacity:.7}
+nav.contents{position:sticky;top:0;z-index:5;background:rgba(240,238,233,.97);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}nav.contents .wrap{display:flex;gap:24px;overflow:auto;scrollbar-width:thin}nav.contents a{display:block;white-space:nowrap;text-decoration:none;min-height:52px;padding:13px 0;font-size:13px}nav.contents a[aria-current="location"]{color:var(--gold);box-shadow:inset 0 -2px var(--gold)}section{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:64px}section .section-no{display:block;font:12px/1.4 ui-monospace,Consolas,monospace;color:var(--gold);letter-spacing:.08em;margin-bottom:14px}.section-head{display:flex;justify-content:space-between;gap:36px;margin-bottom:32px;align-items:start}.section-head p{max-width:550px;color:var(--muted)}.prose{max-width:960px}.prose p{margin:14px 0}.statement{font-family:"Noto Serif SC","Songti SC",SimSun,serif;font-size:clamp(23px,2.5vw,34px);font-weight:600;max-width:1060px;line-height:1.65;margin:20px 0 28px}.callout{padding:24px 28px;border-left:3px solid var(--gold);background:#e6e4dc;margin:24px 0}.callout strong{display:block;margin-bottom:6px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chip{font-size:12px;border:1px solid var(--line);padding:4px 10px}.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}.three{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.block{border-top:2px solid var(--ink);padding-top:18px}.block p{color:var(--muted)}.block .eyebrow{margin-bottom:14px;color:var(--gold)}.small{font-size:13px;color:var(--muted)}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.75}th,td{border-bottom:1px solid var(--line);padding:15px 16px;text-align:left;vertical-align:top}th{background:#e5e5dc;font-weight:600}th:first-child,td:first-child{padding-left:0;min-width:110px}th:not(:first-child),td:not(:first-child){min-width:200px}tbody tr:hover{background:#eae9e1}td b{font-weight:650}td a{color:var(--gold)}.dark{background:var(--dark);color:var(--light)}.dark .section-no,.dark a{color:#d2ae75}.dark .section-head p,.dark .small{color:#bcc3bd}.dark .note{border-color:#48524d}.dark figcaption span{color:#b8c0ba}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}.gallery figure{min-width:0}.gallery img{background:#dcdad5;border:1px solid #aeb4a755;width:100%;aspect-ratio:1.44;object-fit:contain}.gallery figcaption{font-size:13px;line-height:1.7;padding-top:12px}figcaption b{display:block;font-size:14px}figcaption span{display:block;margin-top:4px;color:var(--muted)}.mobile-pair{display:grid;grid-template-columns:240px 240px 1fr;gap:28px;align-items:start;margin-top:30px}.mobile-pair img{width:100%;border:1px solid var(--line)}.mobile-pair figcaption{font-size:12px;margin-top:10px}.note{padding:18px 0;border-top:1px solid var(--line);font-size:13px}.note b{display:block;margin-bottom:5px}.swatches{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}.swatch{display:flex;align-items:center;gap:8px;font-size:12px;white-space:nowrap}.swatch i{display:block;width:24px;height:24px;border:1px solid #73786c55;background:var(--c)}ul,ol{padding-left:22px}li+li{margin-top:9px}.tight li+li{margin-top:5px}code{font-family:ui-monospace,Consolas,monospace;font-size:.88em;overflow-wrap:anywhere}pre{padding:24px;background:#e3e4da;overflow:auto;font-size:13px;line-height:1.8;tab-size:2}pre code{overflow-wrap:normal}.flow{display:grid;grid-template-columns:repeat(5,1fr);margin:28px 0;gap:12px}.flow div{border-top:3px solid var(--ink);padding-top:14px}.flow b{display:block;font-size:16px}.flow small{display:block;line-height:1.7;margin-top:8px;color:var(--muted)}.criteria{display:grid;grid-template-columns:1fr 1fr;gap:0 36px;list-style:none;padding:0;margin:24px 0}.criteria li{border-top:1px solid var(--line);padding:16px 0;margin:0;font-size:14px}.criteria span{color:var(--gold);margin-right:10px;font:12px ui-monospace,Consolas,monospace}.evidence-list{list-style:none;padding:0;columns:2;column-gap:36px}.evidence-list li{break-inside:avoid;padding:8px 0;margin:0;border-bottom:1px solid var(--line);font-size:13px}.evidence-list span{display:block;font:11px/1.6 ui-monospace,Consolas,monospace;color:var(--muted)}details{margin-top:24px;border-top:1px solid var(--line);padding-top:16px}summary{cursor:pointer;min-height:44px;font-weight:600}.bibliography{padding:0;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;margin-top:20px}.bibliography li{display:flex;gap:12px;font-size:13px;line-height:1.5;margin:0;min-width:0}.bibliography code{display:block;color:var(--muted);font-size:10px;margin-top:4px}.ref-id{min-width:30px;font:11px ui-monospace,Consolas,monospace;color:var(--gold);padding-top:4px}.downloads{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px}.downloads a{padding:10px 16px;border:1px solid var(--ink);font-size:13px;text-decoration:none;min-height:44px}.footer{padding:32px var(--pad);font-size:12px;display:flex;justify-content:space-between;gap:20px;color:var(--muted)}
+@media(max-width:900px){.section-head{display:block}.section-head p{margin-top:16px}.mobile-pair{grid-template-columns:1fr 1fr;gap:22px}.mobile-pair>.notes{grid-column:1/-1}.three{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.bibliography{grid-template-columns:1fr}}
+@media(max-width:600px){.mast{display:block}.state{display:block;margin-top:8px}.intro{padding-top:38px}.lead-grid,.two,.gallery{grid-template-columns:1fr}.lead-grid{gap:16px}.meta{gap:8px 16px}nav.contents .wrap{gap:20px}.section-head{margin-bottom:24px}section{padding:44px 0}.statement{font-size:24px}.callout{padding:18px}.criteria{grid-template-columns:1fr}.evidence-list{columns:1}.footer{display:block}.footer span{display:block}.flow{grid-template-columns:1fr 1fr}.flow div:last-child{grid-column:1/-1}th,td{padding:12px 10px}.mobile-pair figcaption{font-size:11px}}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media print{nav.contents,.downloads{display:none}.wrap{padding:0}body{font-size:11pt;background:white;color:black}.intro,section{padding:22px 0}section{break-inside:auto}.gallery figure,.block,.flow{break-inside:avoid}.dark{background:white;color:black}.dark .section-head p,.dark .small,.dark figcaption span{color:#444}details{display:block}details>*{display:block!important}.lead-grid{gap:12px}a{text-decoration:none}.footer,.mast{padding:10px 0}}
+</style>
+</head>
+<body>
+<header class="mast"><span>REFERENCE STUDY / 参考研究档案</span><span class="state">第一步已完成 · 第二步尚未实施</span></header>
+<div class="wrap intro">
+<p class="eyebrow">01 / Learn · Understand · Extract</p>
+<h1>从光的叙事，<br>到项目的档案。</h1>
+<p class="lede">研究 RhineLabUI 与 Eidolon-SC 的实际页面和前端实现，提炼一套可以用于你的 GitHub 全项目首页的视觉与交互规则。</p>
+<div class="meta"><span>研究日期：2026-10-29 · Asia/Singapore</span><span>重点源码与设计文档 + 20 张实屏截图</span><span>本阶段 GitHub 写入：0</span></div>
+<div class="lead-grid">
+<figure><a href="evidence/rhine-04-detail.png" target="_blank" rel="noopener"><img src="evidence/rhine-04-detail.png" width="1440" height="1000" loading="lazy" alt="RhineLabUI：档案详情"></a><figcaption><b>RhineLabUI：档案详情</b><span>RhineLabUI：用材质、秩序与字段建立档案感。</span></figcaption></figure>
+<figure><a href="evidence/eidolon-02-prism.png" target="_blank" rel="noopener"><img src="evidence/eidolon-02-prism.png" width="1440" height="1000" loading="lazy" alt="Eidolon：棱镜分光"></a><figcaption><b>Eidolon：棱镜分光</b><span>Eidolon-SC：用一束光贯穿内容与章节。</span></figcaption></figure>
+</div>
+</div>
+<nav class="contents" aria-label="研究报告目录"><div class="wrap">
+<a href="#conclusion">00 研究结论</a><a href="#comparison">01 风格对照</a><a href="#screens">02 实屏细节</a><a href="#code">03 源码理解</a><a href="#system">04 复用规范</a><a href="#blueprint">05 第二步蓝图</a><a href="#evidence">06 证据与范围</a>
+</div></nav>
+
+<main>
+<section id="conclusion"><div class="wrap">
+<span class="section-no">00 / FINDING</span><h2>适合你的方向：个人项目档案馆</h2>
+<p class="statement">以 RhineLabUI 的档案秩序组织项目，<br>以 Eidolon 的光、留白和叙事节奏建立个人辨识度。</p>
+<div class="three">
+<div class="block"><p class="eyebrow">Identity</p><h3>让访客记得你</h3><p>首屏用姓名或账号、一句话定位与短光效开篇。光逐渐成为分类的线索，视觉主题与真实项目相关。</p></div>
+<div class="block"><p class="eyebrow">Exploration</p><h3>让成果值得探索</h3><p>精选项目有真实演示、用途说明和少量材质动效；项目详情沿用档案编号、字段和分层阅读。</p></div>
+<div class="block"><p class="eyebrow">Index</p><h3>让全部项目找得到</h3><p>首屏和导航都提供“全部项目”。目录支持搜索、筛选、排序和直接链接，项目数量由真实数据决定。</p></div>
+</div>
+<div class="callout"><strong>复用的核心，是内容与动效之间的关系。</strong>两个参考都把抽象概念转成可操作的视觉对象：Rhine 将资料变为可抽取的档案，Eidolon 将角色变为各自颜色的光。你的首页可以把“项目”变为可检索、可展开的成果档案。</div>
+<p class="small">下文用“实测”表示本次浏览器观察，用“源码”表示代码或仓库文档证据，用“建议”表示为第二步作出的设计判断。这里的命名、参数与架构均为研究建议，尚未套用到你的仓库。</p>
+</div></section>
+
+<section id="comparison"><div class="wrap">
+<div class="section-head"><div><span class="section-no">01 / VISUAL GRAMMAR</span><h2>两种气质，共用一套秩序</h2></div><p>共同点是克制的界面、明确的视觉主角和连续的状态变化。两者的布局、字体和访问路径各有任务。</p></div>
+<div class="table-wrap"><table>
+<thead><tr><th>维度</th><th>RhineLabUI</th><th>Eidolon 未登录页</th><th>用于你的总首页</th></tr></thead>
+<tbody>
+<tr><td>整体气质</td><td>暖灰、玻璃、工业终端、实体档案</td><td>近黑、白光、光谱、日式编辑排版</td><td>温和的档案正文 + 有节制的深色开篇，线条与字体层级持续一致</td></tr>
+<tr><td>布局骨架</td><td>左上品牌、右上工具；中央阵列；详情左物件右正文</td><td>左侧章节轨、右上入口；全屏分幕；文字与光交替成为主角</td><td>固定工具导航、简短章节提示；精选可用分屏，目录保持连续阅读</td></tr>
+<tr><td>字体对比</td><td>MiSans；强无衬线标题、短英文标签、滚动编号</td><td>Shippori Mincho B1 / Noto Serif SC / Noto Sans SC；大衬线与小正文对照</td><td>展示标题可以用衬线，项目名与正文保持清晰；不让所有字段都成为视觉主角</td></tr>
+<tr><td>颜色职责</td><td>暖白底、黑字、暖金作为强调，支持暗色材质</td><td>黑底浅字；每个角色的基础色派生光晕、底色与文字色</td><td>每个项目分类一个稳定识别色；只强调当前选择，颜色不替代文字标签</td></tr>
+<tr><td>信息单位</td><td>编号 → 分类 → 权限字段 → 摘要 → 页签</td><td>一束光 → 一个角色 → 一个组合 → 一段能力演示</td><td>项目名 → 一句话用途 → 类别/技术 → 状态 → Demo / 源码</td></tr>
+<tr><td>交互语法</td><td>预览、抽取、解密、阅读、查看模型、返回</td><td>滚动推进、聚焦名牌、组合跳转、主动接听、打开登录</td><td>悬停预览、点击展开、明确跳转；键盘与触屏都能完成同样的任务</td></tr>
+<tr><td>适用范围</td><td>沉浸式探索与有限档案集合</td><td>面向新访客的产品叙事</td><td>有记忆点的门面 + 能容纳不断增长项目的长期目录</td></tr>
+</tbody></table></div>
+<p class="small" style="margin-top:16px">依据：<a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/style.css#L5" target="_blank" rel="noopener">Rhine 样式</a>、<a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/DESIGN.md#L18" target="_blank" rel="noopener">Rhine 设计记录</a>、<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/Landing.tsx#L32" target="_blank" rel="noopener">Eidolon 页面结构</a>、<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/landing.css#L23" target="_blank" rel="noopener">Eidolon 样式</a>。此表最后一列为本报告的迁移建议。</p>
+</div></section>
+
+<section id="screens" class="dark"><div class="wrap">
+<div class="section-head"><div><span class="section-no">02 / OBSERVED DETAILS</span><h2>画面为何成立</h2></div><p>截图均来自本次在线浏览。点击图片可查看原尺寸；研究图保留原站内容与署名线索。</p></div>
+<h3>A. RhineLabUI：材质是主角，界面像标注</h3>
+<div class="gallery">
+<figure><a href="evidence/rhine-03-archive.png" target="_blank" rel="noopener"><img src="evidence/rhine-03-archive.png" width="1440" height="1000" loading="lazy" alt="RhineLabUI：档案阵列"></a><figcaption><b>RhineLabUI：档案阵列</b><span>阵列形成斜向重复节奏，顶部品牌和右上工具锚定画面。当前档案的编号、名称和读取按钮构成少量高对比文字。</span></figcaption></figure>
+<figure><a href="evidence/rhine-04-detail.png" target="_blank" rel="noopener"><img src="evidence/rhine-04-detail.png" width="1440" height="1000" loading="lazy" alt="RhineLabUI：档案详情"></a><figcaption><b>RhineLabUI：档案详情</b><span>详情将抽出的物件放在左边，把可读正文放在右边。横线、双列字段、页签和操作区共同形成阅读次序。</span></figcaption></figure>
+</div>
+<div class="two">
+<div class="note"><b>可复用：二维信息与三维物件各司其职</b>资料仍是可选择、可阅读的 DOM；三维负责空间与触感。项目说明应保持真实文本，模型或截图承担演示。</div>
+<div class="note"><b>可复用：少量、连续的强调</b>编号、标题、下划线与物件状态一起更新。快速切换时，文字和运动追向最新目标，适合项目列表预览。</div>
+</div>
+<div class="gallery">
+<figure><a href="evidence/rhine-07-search.png" target="_blank" rel="noopener"><img src="evidence/rhine-07-search.png" width="1440" height="1000" loading="lazy" alt="RhineLabUI：工程研究分类筛选"></a><figcaption><b>RhineLabUI：工程研究分类筛选</b><span>按 / 打开检索，并筛选“工程研究”。平面的行列表、清楚的分类和结果数量，补全了三维探索的效率。</span></figcaption></figure>
+<figure><a href="evidence/rhine-06-exploded.png" target="_blank" rel="noopener"><img src="evidence/rhine-06-exploded.png" width="1440" height="1000" loading="lazy" alt="RhineLabUI：拆解与磨砂材质"></a><figcaption><b>RhineLabUI：拆解与磨砂材质</b><span>在模型查看器中先拆解，再切换磨砂；拆解状态保留。改变材质应保留访客正在观察的上下文。</span></figcaption></figure>
+</div>
+<div class="swatches" aria-label="Rhine 原始颜色">
+<span class="swatch"><i style="--c:#e8e5e1"></i>底色 #E8E5E1</span><span class="swatch"><i style="--c:#080a08"></i>文字 #080A08</span><span class="swatch"><i style="--c:#a67d48"></i>焦点 #A67D48</span><span class="swatch"><i style="--c:#11181b"></i>暗色环境 #11181B</span>
+</div>
+<p class="small">颜色来自源码；玻璃效果包含 Three.js 物理材质和自定义着色器，不能只用 CSS 的背景模糊还原。依据：<a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/style.css#L5" target="_blank" rel="noopener">样式</a>、<a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/appearance.ts#L27" target="_blank" rel="noopener">材质与揭示</a>、<a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/ui-transitions.ts#L1" target="_blank" rel="noopener">界面过渡</a>。</p>
+
+<h3 style="margin-top:52px">B. Eidolon：让光成为贯穿页面的线索</h3>
+<div class="gallery">
+<figure><a href="evidence/eidolon-01-opening.png" target="_blank" rel="noopener"><img src="evidence/eidolon-01-opening.png" width="1440" height="1000" loading="lazy" alt="Eidolon：黑底首屏与白光"></a><figcaption><b>Eidolon：黑底首屏与白光</b><span>首屏可见的大标题、短说明、右上入口和左侧章节轨；主要空间留给白光。大标题无需等待画布加载。</span></figcaption></figure>
+<figure><a href="evidence/eidolon-03-spectrum.png" target="_blank" rel="noopener"><img src="evidence/eidolon-03-spectrum.png" width="1440" height="1000" loading="lazy" alt="Eidolon：组合光谱与竖排姓名"></a><figcaption><b>Eidolon：组合光谱与竖排姓名</b><span>光谱由发散变为按组合组织的竖向光带。姓名、编号、色值和底部分组跳转使颜色具有真实含义。</span></figcaption></figure>
+<figure><a href="evidence/eidolon-04-words.png" target="_blank" rel="noopener"><img src="evidence/eidolon-04-words.png" width="1440" height="1000" loading="lazy" alt="Eidolon：原文与字幕的分层"></a><figcaption><b>Eidolon：原文与字幕的分层</b><span>中文能力说明、日文竖排原文与底部中文字幕分居不同位置，滚动控制内容揭示的节奏。</span></figcaption></figure>
+<figure><a href="evidence/eidolon-06-memory.png" target="_blank" rel="noopener"><img src="evidence/eidolon-06-memory.png" width="1440" height="1000" loading="lazy" alt="Eidolon：记忆浮岛场景"></a><figcaption><b>Eidolon：记忆浮岛场景</b><span>记忆场景把角色间传递信息的关系空间化。它有明确要解释的能力，因此三维场景具有内容依据。</span></figcaption></figure>
+</div>
+<div class="two">
+<div class="note"><b>可复用：先出现内容，再增强光效</b>首屏先用 CSS 光束，OGL 完成首帧后淡入替换。两层几何锚点对齐，加载过程也维持完整构图。</div>
+<div class="note"><b>需改写：角色色与长篇叙事</b>项目分类可以有识别色，但不必照搬官方角色色。此次桌面页面约 41,299px 高，项目目录不宜让每个仓库都占一段长横滚。</div>
+</div>
+<div class="swatches" aria-label="Eidolon 原始颜色">
+<span class="swatch"><i style="--c:#020203"></i>背景 #020203</span><span class="swatch"><i style="--c:#eeecf2"></i>正文 #EEECF2</span><span class="swatch"><i style="--c:#f6f4f8"></i>标题 #F6F4F8</span><span class="swatch"><i style="--c:#dcd9e1"></i>引言 #DCD9E1</span>
+</div>
+<p class="small">1440px 视口下，大标题计算字号为 158.4px；源码使用 clamp(56px, 11vw, 184px)。左轨桌面为 72px，窄屏为 36px。原站章节轨是进度提示；组合跳转另有按钮。依据：<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/landing.css#L23" target="_blank" rel="noopener">排版</a>、<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/LightStage.tsx#L34" target="_blank" rel="noopener">光层与循环</a>、<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/timeline.ts#L9" target="_blank" rel="noopener">时间线</a>。</p>
+
+<h3 style="margin-top:52px">C. 窄屏必须重新构图</h3>
+<div class="mobile-pair">
+<figure><a href="evidence/eidolon-09-mobile.png" target="_blank" rel="noopener"><img src="evidence/eidolon-09-mobile.png" width="390" height="844" loading="lazy" alt="Eidolon：窄屏首屏"></a><figcaption><b>Eidolon：窄屏首屏</b><span>390×844：光从上方进入，标题改为更窄的构图。</span></figcaption></figure>
+<figure><a href="evidence/rhine-10-mobile.png" target="_blank" rel="noopener"><img src="evidence/rhine-10-mobile.png" width="390" height="844" loading="lazy" alt="RhineLabUI：窄屏详情"></a><figcaption><b>RhineLabUI：窄屏详情</b><span>390×844：上方模型、下方可独立滚动的正文。</span></figcaption></figure>
+<div class="notes">
+<div class="note"><b>实测：Eidolon 减少动态效果</b>开启 prefers-reduced-motion 后刷新，html 标记变为 tier=reduced、layout=still，分组转为纵向排列。该次窄屏完整文档高约 13,996px。</div>
+<div class="note"><b>实测：Rhine 竖屏详情</b>舞台标记切换为 portrait；390px 视口没有文档横向溢出。正文段落计算字号为 15px，未将整套桌面文字缩小塞入手机。</div>
+<div class="note"><b>验证边界</b>这里是桌面浏览器的窄视口。媒体查询仍报告鼠标指针，因此不能由此确认触摸手势、iPhone Safari 或手机实际帧率。</div>
+</div>
+</div>
+</div></section>
+
+<section id="code"><div class="wrap">
+<div class="section-head"><div><span class="section-no">03 / CODE UNDERSTANDING</span><h2>可迁移的实现方法</h2></div><p>重点看状态、数据、渲染和排版之间如何配合。按相应职责重新实现，更容易适配你的项目规模。</p></div>
+<div class="table-wrap"><table><thead><tr><th>代码位置</th><th>实现要点</th><th>迁移到个人首页</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/main.ts#L127" target="_blank" rel="noopener">Rhine main.ts</a></td><td>boot / archive / detail 三种模式；DOM 内容与场景连接；检索、设置及独立查看器有各自入口。</td><td>建立目录 / 项目详情 / 预览的清楚状态，详情关闭后保留筛选、滚动位置和触发点。</td></tr>
+<tr><td><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/ui-transitions.ts#L1" target="_blank" rel="noopener">Rhine ui-transitions.ts</a></td><td>过渡读取当前透明度与位移；revision 避免旧回调覆盖新状态。弹窗默认 300ms 进入、200ms 退出，正文 150ms。</td><td>连续开关、快速换项目时接续当前状态；退出动画完成再移除内容，减少动态效果时直接收束。</td></tr>
+<tr><td><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/appearance.ts#L27" target="_blank" rel="noopener">Rhine appearance.ts</a><br><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/scene.ts#L471" target="_blank" rel="noopener">scene.ts</a></td><td>阵列采用实例化；抽取与清晰度在同一物件上连续变更。材质涉及 transmission、roughness 与自定义 shader。</td><td>三维限定于精选项目的展示区，目录仍用平面文本和图片。先确保内容可用，再决定是否承担这份渲染成本。</td></tr>
+<tr><td><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/content/README.md#L5" target="_blank" rel="noopener">Rhine content/README.md</a></td><td>内容独立于 TypeScript，页面与 TXT 共用同一份 JSON；当前校验明确限定五个分类、每类八份、合计四十份。</td><td><b>内容分离保留，固定数量规则重写。</b>支持任意项目数量、空分类、缺失 Demo、Fork 与归档状态。</td></tr>
+<tr><td><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/viewport-layout.ts#L7" target="_blank" rel="noopener">Rhine viewport-layout.ts</a></td><td>桌面逻辑舞台与窄屏 CSS 像素布局分开；镜头按视口重新取景。</td><td>手机使用纵向详情和真实可读字号；不能只把桌面布局整体 scale 缩小。</td></tr>
+<tr><td><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/Landing.tsx#L32" target="_blank" rel="noopener">Eidolon Landing.tsx</a></td><td>标题、文案、颜色、分组在服务端准备；DOM 标记各幕，客户端接收少量结构化数据。</td><td>静态构建时就输出身份介绍、项目摘要与链接，避免等 GitHub API 和 WebGL 才能看到内容。</td></tr>
+<tr><td><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/LightStage.tsx#L34" target="_blank" rel="noopener">Eidolon LightStage.tsx</a><br><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/stageStore.ts#L27" target="_blank" rel="noopener">stageStore.ts</a></td><td>单一 requestAnimationFrame 推进滚动、纯模型、DOM 样式及绘制；只在当前幕、组合等离散状态改变时通知 React。</td><td>连续动效走 CSS 变量或渲染循环；不把每帧位置都写入组件状态，避免整页无效更新。</td></tr>
+<tr><td><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/timeline.ts#L9" target="_blank" rel="noopener">Eidolon model/timeline.ts</a></td><td>以“滚过多少屏”为时间单位；sticky 舞台的高度和画面状态共用时间线。</td><td>仅为短开篇或少量精选建立时间线。全部项目目录使用正常文档流，并提供直接锚点。</td></tr>
+<tr><td><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/tier.ts#L9" target="_blank" rel="noopener">Eidolon model/tier.ts</a><br><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/canvasStage.ts#L10" target="_blank" rel="noopener">canvasStage.ts</a></td><td>full / lite / basic / reduced / static 五档；优先考虑省流量、WebGL、减少动态和触屏。场景提前约一屏加载，远离时停绘并按条件释放。</td><td>至少实现完整、轻量、静态路径；帧慢或上下文丢失时保留项目内容。局部效果失败不应拖垮整页。</td></tr>
+<tr><td><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/layout.tsx#L52" target="_blank" rel="noopener">Eidolon layout.tsx</a></td><td>展示字体自托管；首屏字集与其余字集分离，只预载首屏；展示页面有自己的根布局。</td><td>复用字体加载原则，重新覆盖你的姓名与动态项目名。原站精简字库不一定包含你的新文字。</td></tr>
+<tr><td><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/color.ts#L9" target="_blank" rel="noopener">Eidolon model/color.ts</a></td><td>基础色保持稳定，在 OKLab 中派生光晕、深底和可读文字色；算法在服务端运行。</td><td>分类色建立一组派生 token，正文颜色独立控制；暗蓝等分类不直接拿原色做黑底小字。</td></tr>
+<tr><td><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/LandingEntry.tsx#L5" target="_blank" rel="noopener">Eidolon LandingEntry.tsx</a></td><td>hover / focus 时预取面板，点击后才挂载。页头入口与结尾入口共用逻辑。</td><td>可用于“项目详情”资源的意图预取；普通源码和 Demo 仍提供标准链接。</td></tr>
+</tbody></table></div>
+<div class="callout"><strong>一个关键边界：展示演示不等于后台能力。</strong>Eidolon 未登录页的来电展示，源码会在接听后播放预设开场白与字幕；本次没有进入真实语音会话。你的首页可以展示项目交互样例，但每个样例应清楚说明它演示什么。依据：<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/Call.tsx#L89" target="_blank" rel="noopener">Call.tsx</a>。</div>
+<div class="two">
+<div class="block"><h3>动效要响应最新操作</h3><p>Rhine 的编号与标题使用约 460ms 的滚动配置；Eidolon 的模型与循环分离。值得保留的是“可中断、无过期回调、快速输入不排队”的行为。</p></div>
+<div class="block"><h3>性能预算要说明口径</h3><p>Eidolon ADR 的目标是落地页自身首屏 JS 压缩后不超过 50KB，排除框架基线。它是仓库的设计预算，本次没有重新跑出该页面的 Lighthouse 成绩。<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/docs/adr/0016-landing-page-is-its-own-visual-world.md#L1" target="_blank" rel="noopener">查看 ADR</a></p></div>
+</div>
+</div></section>
+
+<section id="system"><div class="wrap">
+<div class="section-head"><div><span class="section-no">04 / REUSABLE SYSTEM</span><h2>为你的首页归纳的规范</h2></div><p>以下全部是第二步建议。保留可辨识的风格，同时让内容、数量和访问路径适合你的真实仓库。</p></div>
+<div class="two">
+<div><h3>视觉规则</h3><ol class="tight">
+<li><b>一个主隐喻：</b>每个项目是一份成果档案；分类线索可从光束过渡为目录刻度。</li>
+<li><b>两个明暗场景：</b>深色开篇建立氛围，暖灰目录便于阅读；边界有清楚转场，字体与字段语言保持连续。</li>
+<li><b>三层字体：</b>展示标题、项目标题/正文、元数据。长项目名保持横排；竖排只用于简短章节装饰。</li>
+<li><b>颜色有含义：</b>分类色稳定；活跃项才发光。状态同时有文字，不能只靠颜色区分。</li>
+<li><b>材质有范围：</b>玻璃和透视只出现在少量展示物件；搜索、筛选、长正文使用稳定平面。</li>
+</ol></div>
+<div><h3>交互规则</h3><ol class="tight">
+<li><b>首屏可直达全部项目：</b>入口与介绍同时出现；短开篇不锁定滚动，也不要求完成“身份验证”。</li>
+<li><b>预览与打开分工：</b>hover / focus 可以预览，点击或 Enter 明确打开；触屏有同等可用的入口。</li>
+<li><b>标准链接可直接访问：</b>源码、Demo、文档均用真实 URL；支持复制、另开标签和浏览器返回。</li>
+<li><b>详情返回保留上下文：</b>保留筛选、排序、目录滚动；Esc 关闭弹层并归还焦点。</li>
+<li><b>减少动态仍完整：</b>改为纵向静态排版；无 WebGL 也能浏览全部内容。声音默认静音，只有访客主动开启才播放。</li>
+</ol></div>
+</div>
+<h3 style="margin-top:30px">建议的起始设计参数</h3>
+<div class="table-wrap"><table><thead><tr><th>项目</th><th>建议值</th><th>用途与边界</th></tr></thead><tbody>
+<tr><td>基础颜色</td><td>Paper #E8E5E1 · Ink #151A17 · Muted #62665E · Line #BDB9B0 · Accent #A67D48 · Night #11181B</td><td>这是本报告的归纳配色；各主题的文字、链接及焦点对比度在实施时分别验证。</td></tr>
+<tr><td>字号</td><td>桌面展示标题 72–132px；窄屏 40–56px；正文 16–18px</td><td>使用 clamp 和真实文本测试长标题；具体字体优先服从你的现有品牌。</td></tr>
+<tr><td>间距</td><td>4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96px</td><td>细线组织区域；主次通过字号、距离和密度区分。</td></tr>
+<tr><td>触控</td><td>主要触控目标至少 44×44px</td><td>手机筛选可折叠；正文独立滚动时避免与页面手势冲突。</td></tr>
+<tr><td>微交互</td><td>hover 160ms；正文 150ms；弹层进入 300ms / 退出 200ms；滚动标签 460ms</td><td>选用少量一致节奏；不必每个数字都滚动。减少动态时直接抵达最终状态。</td></tr>
+<tr><td>开篇与性能</td><td>开篇效果建议不超过 1.2s；LCP ≤2.5s、CLS ≤0.1 作为实施验收目标</td><td>这些是待测目标，当前没有你的首页性能成绩。首屏图片、字体和延迟效果分开预算。</td></tr>
+</tbody></table></div>
+<div class="callout"><strong>内容必须真实。</strong>身份、项目数、Star、更新日期与状态从实际资料取得；没有 Demo 就不显示虚构按钮，没有描述就先用真实仓库名与可核实信息。页面角落的终端标记可改为“PUBLIC PROJECT ARCHIVE”和真实同步日期。</div>
+</div></section>
+
+<section id="blueprint"><div class="wrap">
+<div class="section-head"><div><span class="section-no">05 / NEXT-STAGE BLUEPRINT</span><h2>第二步如何吸收套用</h2></div><p>这一节给出实施依据，不代表已开始改仓库。实际项目内容、身份和仓库位置均留待第二步核对。</p></div>
+<div class="flow" aria-label="首页信息结构">
+<div><b>01 序 / 身份</b><small>我是谁、做什么<br>全部项目 / GitHub</small></div>
+<div><b>02 精选 / 代表作</b><small>真实截图或演示<br>一句话价值与入口</small></div>
+<div><b>03 索引 / 全部项目</b><small>搜索、筛选与排序<br>结果数量与状态</small></div>
+<div><b>04 档案 / 详情</b><small>用途、我的工作、技术<br>源码 / Demo / 文档</small></div>
+<div><b>05 关于 / 联系</b><small>真实介绍与公开联系<br>同步日期与参考署名</small></div>
+</div>
+<h3>用数据驱动全部项目</h3>
+<div class="prose"><p>建议在构建阶段分页同步已确认账号的公开仓库，生成静态项目快照，再用人工配置补充精选顺序、展示名、分类、截图与更友好的介绍。以 GitHub repository id 为稳定标识，避免改名或排序后详情、收藏指错项目。</p><p>“全部”的暂定范围是目标账号下的公开项目，Fork 与归档保留标记和查询入口；组织项目与其他归属需要结合你的实际账号核对。私人仓库不会因“全部项目”被自动公开。抓取失败时保留最后成功快照并展示真实同步时间。</p></div>
+<pre aria-label="建议的数据职责划分"><code>GitHub 公共元数据 → projects.generated.json
+  repository id、full_name、description、topics、language
+  html_url、homepage、stars、fork、archived、pushed_at
+
+人工展示配置     → projects.curated.json
+  displayName、summary、category、featuredOrder
+  cover、demoUrl、myContribution、highlights
+
+合并结果         → 静态项目正文 + 目录 + 可选特效
+  缺失字段有明确回退；统计、名称和链接不由动画层编造</code></pre>
+<div class="two">
+<div class="block"><h3>实现建议</h3><p>可用 Vite + TypeScript + CSS，静态构建可读项目正文，再用轻量 DOM 逻辑实现筛选与详情。Three.js 仅在确定需要的展示区按需载入。若目标仓库已有 React 等框架，优先沿用现有架构。</p><p style="margin-top:12px">分出内容、目录、详情、动效和数据同步的职责，避免把两个参考的完整应用与后台一起移植。</p></div>
+<div class="block"><h3>GitHub 展示方式</h3><p>建议用仓库保存首页源码，GitHub Pages 承载可交互网页，个人资料 README 提供介绍与入口。Pages 可发布静态 HTML、CSS 和 JavaScript；具体采用账号站点还是项目站点，要结合目标仓库决定。</p><p style="margin-top:12px">账号站点通常在 owner.github.io；项目站点通常在 owner.github.io/repositoryname。实施时检查基础路径和刷新行为。<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages" target="_blank" rel="noopener">GitHub 官方说明</a></p></div>
+</div>
+<h3 style="margin-top:32px">明确的取舍</h3>
+<div class="table-wrap"><table><thead><tr><th>保留</th><th>改写</th><th>不纳入总首页</th></tr></thead><tbody><tr><td>档案编号与细线字段<br>精选项目的实体感<br>渐进加载与无 WebGL 回退<br>连续、可打断的微交互</td><td>五类八份 → 任意数量<br>角色光谱 → 真实项目分类<br>长分幕 → 短开篇与少量精选<br>游戏资料 → 项目成果说明</td><td>登录门槛、AI 对话后台<br>角色立绘、共享记忆、来电玩法<br>强制长开场<br>全站重三维与每项目全屏横滚</td></tr></tbody></table></div>
+<h3 style="margin-top:32px">第二步的验收依据</h3>
+<ul class="criteria">
+<li><span>01</span>收录范围内的项目均能在目录找到，筛选后能清空并恢复全部。</li>
+<li><span>02</span>统计、状态与链接来自真实数据，缺失 Demo 或图片有明确回退。</li>
+<li><span>03</span>关闭特效、无 WebGL 或减少动态时，内容与链接仍完整。</li>
+<li><span>04</span>390px 窄屏无横向溢出，主要按钮可触达，长标题可读。</li>
+<li><span>05</span>弹层支持 Esc、焦点归还与快速连续操作，返回保留目录位置。</li>
+<li><span>06</span>同步分页完整，失败保留旧快照，浏览器不需要私有令牌。</li>
+<li><span>07</span>实际部署路径下图片、字体、详情链接与刷新均可用。</li>
+<li><span>08</span>用实际构建与设备检查性能；所有预算与实测结果分开记录。</li>
+</ul>
+<p class="small">GitHub 项目元数据同步依据：<a href="https://docs.github.com/en/rest/repos/repos#list-repositories-for-a-user" target="_blank" rel="noopener">公开用户仓库 API</a>。当前没有创建 Actions、自动化、分支、提交或部署。</p>
+<div class="downloads"><a href="reuse-spec.json" download>下载可复用规范 JSON ↓</a><a href="#evidence">查看全部证据与源码定位</a></div>
+</div></section>
+
+<section id="evidence"><div class="wrap">
+<div class="section-head"><div><span class="section-no">06 / SOURCES & LIMITS</span><h2>研究依据与完成范围</h2></div><p>仓库固定到下列提交；线上截图是观察当时的部署。没有证据证明线上部署与所读提交完全一致。</p></div>
+<div class="two">
+<div class="block"><h3>RhineLabUI</h3><p><a href="https://github.com/LBEILC/RhineLabUI" target="_blank" rel="noopener">LBEILC / RhineLabUI</a><br><a href="https://rhine.lubeiluchen.cc/" target="_blank" rel="noopener">README 所列在线体验</a></p><p class="small" style="margin-top:10px">main：<code>12cc5e4013acb9408f753ff71de6b8492299b7c8</code><br>提交时间：2026-10-08 22:52:38（UTC+8）</p></div>
+<div class="block"><h3>Eidolon-SC</h3><p><a href="https://github.com/Sallyn0225/eidolon-sc" target="_blank" rel="noopener">Sallyn0225 / eidolon-sc</a><br><a href="https://283ai.hmhnk.top/" target="_blank" rel="noopener">用户指定的未登录 demo</a></p><p class="small" style="margin-top:10px">main：<code>cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5</code><br>提交时间：2026-10-29 20:27:42（UTC+8）</p></div>
+</div>
+<div class="prose" style="margin-top:28px">
+<p><b>已完成：</b>两个仓库重点前端源码与设计文档研究；Rhine 的入口、开场片段、阵列、详情、模型查看器、拆解、磨砂切换、分类检索、设置、明暗主题与窄屏；Eidolon 的八幕内容抽样、未登录弹窗、窄屏与减少动态效果排版。</p>
+<p><b>验证限制：</b>未登录任何站点，未进入私人页面，未接听真实语音；未做触摸硬件、Safari 实机、完整无 JS 环境或 Lighthouse 测试。Rhine 在线页曾出现 manifest.webmanifest 的连接关闭错误，但主体与上述交互可用；本报告未据此确认 PWA 安装或离线能力。</p>
+<p><b>来源与复用：</b>Rhine 仓库标注 MIT；Eidolon 标注 AGPL-3.0-or-later，并单列第三方素材许可。第二步默认按本报告的方法重新实现你的界面；如复用具体源码或素材，应记录来源并遵守对应许可。原角色、Logo 和游戏素材不会默认成为你的个人品牌资产。依据：<a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/LICENSE#L1" target="_blank" rel="noopener">Rhine LICENSE</a>、<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/LICENSING.md#L1" target="_blank" rel="noopener">Eidolon LICENSING</a>、<a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/CREDITS.md#L1" target="_blank" rel="noopener">展示素材 CREDITS</a>。</p>
+</div>
+<details><summary>展开 20 张原始截图与采集尺寸</summary><ul class="evidence-list"><li><a href="evidence/eidolon-01-opening.png" target="_blank" rel="noopener">Eidolon：黑底首屏与白光</a><span>1440 × 1000 · scrollY 0</span></li><li><a href="evidence/eidolon-02-prism.png" target="_blank" rel="noopener">Eidolon：棱镜分光</a><span>1440 × 1000 · scrollY 2600</span></li><li><a href="evidence/eidolon-03-spectrum.png" target="_blank" rel="noopener">Eidolon：组合光谱与竖排姓名</a><span>1440 × 1000 · scrollY 6500</span></li><li><a href="evidence/eidolon-04-words.png" target="_blank" rel="noopener">Eidolon：原文与字幕的分层</a><span>1440 × 1000 · scrollY 22500</span></li><li><a href="evidence/eidolon-05-call.png" target="_blank" rel="noopener">Eidolon：来电展示</a><span>1440 × 1000 · scrollY 26200</span></li><li><a href="evidence/eidolon-06-memory.png" target="_blank" rel="noopener">Eidolon：记忆浮岛场景</a><span>1440 × 1000 · scrollY 31200</span></li><li><a href="evidence/eidolon-07-closing.png" target="_blank" rel="noopener">Eidolon：结尾光屏与入口</a><span>1440 × 1000 · scrollY 40000</span></li><li><a href="evidence/eidolon-08-login-panel.png" target="_blank" rel="noopener">Eidolon：未登录弹窗</a><span>1440 × 1000 · scrollY 40000</span></li><li><a href="evidence/eidolon-09-mobile.png" target="_blank" rel="noopener">Eidolon：窄屏首屏</a><span>390 × 844 · scrollY 0</span></li><li><a href="evidence/eidolon-10-reduced-motion.png" target="_blank" rel="noopener">Eidolon：减少动态效果后的分光定格</a><span>390 × 844 · scrollY 900</span></li><li><a href="evidence/rhine-01-entry.png" target="_blank" rel="noopener">RhineLabUI：资源就绪入口</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-02-boot.png" target="_blank" rel="noopener">RhineLabUI：开场片段</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-03-archive.png" target="_blank" rel="noopener">RhineLabUI：档案阵列</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-04-detail.png" target="_blank" rel="noopener">RhineLabUI：档案详情</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-05-viewer.png" target="_blank" rel="noopener">RhineLabUI：独立模型查看器</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-06-exploded.png" target="_blank" rel="noopener">RhineLabUI：拆解与磨砂材质</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-07-search.png" target="_blank" rel="noopener">RhineLabUI：工程研究分类筛选</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-08-settings.png" target="_blank" rel="noopener">RhineLabUI：设置与画质预设</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-09-dark.png" target="_blank" rel="noopener">RhineLabUI：暗色详情</a><span>1440 × 1000</span></li><li><a href="evidence/rhine-10-mobile.png" target="_blank" rel="noopener">RhineLabUI：窄屏详情</a><span>390 × 844</span></li></ul></details>
+<details open><summary>关键源码定位 · 24 项</summary><ul class="bibliography"><li id="R1"><span class="ref-id">R1</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/style.css#L5" target="_blank" rel="noopener">浅色底、MiSans、终端布局</a><code>LBEILC/RhineLabUI/src/style.css:5</code></div></li><li id="R2"><span class="ref-id">R2</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/main.ts#L127" target="_blank" rel="noopener">boot/archive/detail 状态与交互</a><code>LBEILC/RhineLabUI/src/main.ts:127</code></div></li><li id="R3"><span class="ref-id">R3</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/ui-transitions.ts#L1" target="_blank" rel="noopener">可打断过渡、300/200/150ms</a><code>LBEILC/RhineLabUI/src/ui-transitions.ts:1</code></div></li><li id="R4"><span class="ref-id">R4</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/appearance.ts#L27" target="_blank" rel="noopener">真实玻璃材质和清晰度揭示</a><code>LBEILC/RhineLabUI/src/appearance.ts:27</code></div></li><li id="R5"><span class="ref-id">R5</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/viewport-layout.ts#L7" target="_blank" rel="noopener">按屏幕重排与镜头构图</a><code>LBEILC/RhineLabUI/src/viewport-layout.ts:7</code></div></li><li id="R6"><span class="ref-id">R6</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/content/README.md#L5" target="_blank" rel="noopener">内容分离与五类八份限制</a><code>LBEILC/RhineLabUI/content/README.md:5</code></div></li><li id="R7"><span class="ref-id">R7</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/render-quality.ts#L14" target="_blank" rel="noopener">画质预设与缓冲像素上限</a><code>LBEILC/RhineLabUI/src/render-quality.ts:14</code></div></li><li id="R8"><span class="ref-id">R8</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/LICENSE#L1" target="_blank" rel="noopener">MIT 声明</a><code>LBEILC/RhineLabUI/LICENSE:1</code></div></li><li id="R9"><span class="ref-id">R9</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/scene.ts#L471" target="_blank" rel="noopener">InstancedMesh 档案阵列</a><code>LBEILC/RhineLabUI/src/scene.ts:471</code></div></li><li id="R10"><span class="ref-id">R10</span><div><a href="https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/DESIGN.md#L18" target="_blank" rel="noopener">滚动标题与交互设计依据</a><code>LBEILC/RhineLabUI/DESIGN.md:18</code></div></li><li id="E1"><span class="ref-id">E1</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/Landing.tsx#L32" target="_blank" rel="noopener">服务端可读内容、八幕结构</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/Landing.tsx:32</code></div></li><li id="E2"><span class="ref-id">E2</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/landing.css#L23" target="_blank" rel="noopener">黑底、字体、竖排、首屏</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/landing.css:23</code></div></li><li id="E3"><span class="ref-id">E3</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/LightStage.tsx#L34" target="_blank" rel="noopener">统一帧循环与滚动模型</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/LightStage.tsx:34</code></div></li><li id="E4"><span class="ref-id">E4</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/timeline.ts#L9" target="_blank" rel="noopener">按屏数编排叙事</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/model/timeline.ts:9</code></div></li><li id="E5"><span class="ref-id">E5</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/tier.ts#L9" target="_blank" rel="noopener">五档渲染与降级规则</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/model/tier.ts:9</code></div></li><li id="E6"><span class="ref-id">E6</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/stageStore.ts#L27" target="_blank" rel="noopener">逐帧更新与组件状态分离</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/stageStore.ts:27</code></div></li><li id="E7"><span class="ref-id">E7</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/canvasStage.ts#L10" target="_blank" rel="noopener">场景预加载、释放和局部失败</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/canvasStage.ts:10</code></div></li><li id="E8"><span class="ref-id">E8</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/layout.tsx#L52" target="_blank" rel="noopener">本地字体子集与首屏预载</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/layout.tsx:52</code></div></li><li id="E9"><span class="ref-id">E9</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/color.ts#L9" target="_blank" rel="noopener">基础色派生文字、光晕和深底</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/model/color.ts:9</code></div></li><li id="E10"><span class="ref-id">E10</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/LandingEntry.tsx#L5" target="_blank" rel="noopener">按意图预取、点击后打开弹窗</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/LandingEntry.tsx:5</code></div></li><li id="E11"><span class="ref-id">E11</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/docs/adr/0016-landing-page-is-its-own-visual-world.md#L1" target="_blank" rel="noopener">展示页面与应用的边界、性能预算</a><code>Sallyn0225/eidolon-sc/docs/adr/0016-landing-page-is-its-own-visual-world.md:1</code></div></li><li id="E12"><span class="ref-id">E12</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/LICENSING.md#L1" target="_blank" rel="noopener">AGPL 与第三方素材的独立声明</a><code>Sallyn0225/eidolon-sc/LICENSING.md:1</code></div></li><li id="E13"><span class="ref-id">E13</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/Call.tsx#L89" target="_blank" rel="noopener">未登录来电展示与开场白播放</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/Call.tsx:89</code></div></li><li id="E14"><span class="ref-id">E14</span><div><a href="https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/CREDITS.md#L1" target="_blank" rel="noopener">手机模型及字体出处</a><code>Sallyn0225/eidolon-sc/frontend/src/app/(landing)/CREDITS.md:1</code></div></li></ul></details>
+<div class="callout"><strong>第一步的交付状态</strong>参考研究与可复用规范已完成。第二步尚未开始；你的账号、目标仓库、真实项目清单、品牌文案与最终部署方式均未假定，也未向 GitHub 写入改动。</div>
+</div></section>
+</main>
+<footer class="footer"><span>研究整理 · 2026-10-29 · 第一阶段</span><span>图像与原站设计归各参考项目及其相应权利人；本报告用于参考分析。</span></footer>
+<script>
+const links=[...document.querySelectorAll('nav.contents a')];
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>{for(const e of entries)if(e.isIntersecting){links.forEach(a=>a.removeAttribute('aria-current'));const a=links.find(a=>a.hash==='#'+e.target.id);a?.setAttribute('aria-current','location');}},{rootMargin:'-10% 0px -65% 0px',threshold:0});document.querySelectorAll('main>section').forEach(s=>observer.observe(s));}
+</script>
+</body>
+</html>

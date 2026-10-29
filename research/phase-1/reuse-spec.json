@@ -1,0 +1,627 @@
+{
+  "status": "research_complete_implementation_not_started",
+  "stage": 1,
+  "studiedOn": "2026-10-29",
+  "timezone": "Asia/Singapore",
+  "projectIdentity": {
+    "githubOwner": null,
+    "targetRepository": null,
+    "displayName": null,
+    "inventoryVerified": false
+  },
+  "scope": {
+    "completed": [
+      "两仓库重点前端源码分析",
+      "在线未登录页面交互与视觉分析",
+      "390×844窄屏与减少动态效果检查",
+      "项目总首页复用规范"
+    ],
+    "githubMutations": 0,
+    "sitePublished": false
+  },
+  "direction": {
+    "workingTitle": "个人项目档案馆 / Project Archive",
+    "thesis": "Eidolon 的光与叙事用于建立记忆点，RhineLabUI 的档案结构用于组织项目。",
+    "defaultTheme": "暖灰档案内容与黑色光束开篇，连续使用同一字体层级和细线语言",
+    "allProjectsAccess": "首屏及固定导航直接进入全部项目"
+  },
+  "architecture": {
+    "recommended": "Vite + TypeScript + 静态 HTML 内容；少量 DOM 组件；Three.js 可选且延迟加载",
+    "conditional": "已有 React 或其他前端仓库时优先沿用现有栈",
+    "hostingCandidate": "GitHub Pages",
+    "effectsAreRequiredForContent": false,
+    "ordinaryAnchors": true
+  },
+  "proposedTokens": {
+    "note": "以下是为第二步归纳的建议值，并非两个参考的统一原始参数。",
+    "colors": {
+      "paper": "#E8E5E1",
+      "ink": "#151A17",
+      "muted": "#62665E",
+      "line": "#BDB9B0",
+      "accent": "#A67D48",
+      "night": "#11181B",
+      "light": "#EEECEF"
+    },
+    "typography": {
+      "display": "中文宋体/衬线或现有品牌标题字体",
+      "body": "MiSans 或系统无衬线后备，具体许可与加载策略在实施时核对",
+      "metadata": "等宽数字与短英文标签",
+      "bodyPx": [
+        16,
+        18
+      ],
+      "desktopDisplayPx": [
+        72,
+        132
+      ],
+      "mobileDisplayPx": [
+        40,
+        56
+      ]
+    },
+    "spacingPx": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96
+    ],
+    "minTouchTargetPx": 44,
+    "motion": {
+      "hoverMs": 160,
+      "contentRevealMs": 150,
+      "surfaceEnterMs": 300,
+      "surfaceExitMs": 200,
+      "rollingLabelMs": 460,
+      "openingMaxMs": 1200,
+      "reducedMotion": "禁用长镜头、位移和滚动文字，内容纵向可读"
+    }
+  },
+  "informationArchitecture": [
+    {
+      "id": "intro",
+      "goal": "说明我是谁、做什么",
+      "required": [
+        "姓名或账号",
+        "一句话定位",
+        "查看全部项目",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "featured",
+      "goal": "用真实成果建立代表性",
+      "required": [
+        "精选项目",
+        "一句话用途",
+        "真实截图或演示",
+        "源码与Demo入口"
+      ]
+    },
+    {
+      "id": "projects",
+      "goal": "完整、快速检索项目",
+      "required": [
+        "搜索",
+        "分类",
+        "语言/技术标签",
+        "排序",
+        "可见结果数量",
+        "Fork/归档标记",
+        "清空筛选"
+      ]
+    },
+    {
+      "id": "detail",
+      "goal": "解释某个项目的价值",
+      "required": [
+        "用途",
+        "我的工作",
+        "技术",
+        "状态",
+        "源码",
+        "可用时的Demo与文档",
+        "稳定链接"
+      ]
+    },
+    {
+      "id": "about",
+      "goal": "介绍能力和联系入口",
+      "required": [
+        "真实介绍",
+        "公开联系方式",
+        "最后同步时间",
+        "参考与署名"
+      ]
+    }
+  ],
+  "inventoryPolicy": {
+    "provisionalScope": "所确认账号下的全部公开项目；Fork和归档保留可查标记",
+    "organizationScope": "第二步按用户实际项目归属核对",
+    "privateProjects": "不自动发布",
+    "identityKey": "GitHub repository id",
+    "fetch": "构建期分页读取公开仓库元数据并生成静态快照",
+    "overlay": "人工补充展示名、介绍、分类、精选、截图与Demo；不覆盖同步字段",
+    "fetchFailure": "保留最后一次成功快照并显示其真实同步时间",
+    "credentials": "不向浏览器发送令牌",
+    "autoRefresh": "实施前确定是否需要；本阶段未建立自动化"
+  },
+  "reuseDecisions": [
+    {
+      "feature": "档案编号、细线、中英字段与精选抽取",
+      "decision": "保留并改为真实项目字段",
+      "priority": "P0"
+    },
+    {
+      "feature": "全部项目搜索与分类目录",
+      "decision": "保留并支持任意项目数和任意分类数",
+      "priority": "P0"
+    },
+    {
+      "feature": "原始五列八份结构",
+      "decision": "重写数据与布局规则",
+      "priority": "P0"
+    },
+    {
+      "feature": "光束、分光与章节线索",
+      "decision": "缩短用于开篇及精选项目",
+      "priority": "P1"
+    },
+    {
+      "feature": "三维玻璃",
+      "decision": "限定为精选展示的渐进增强",
+      "priority": "P1"
+    },
+    {
+      "feature": "角色立绘、AI对话、来电、共享记忆、账号系统",
+      "decision": "不进入项目总首页范围",
+      "priority": "excluded"
+    },
+    {
+      "feature": "长时间开场与每项目全屏横滚",
+      "decision": "改为短开篇、可直接进入目录",
+      "priority": "excluded"
+    }
+  ],
+  "acceptanceTargets": [
+    "任何公开收录项目都可通过目录访问；筛选后能恢复全部。",
+    "项目链接、状态、统计均来自真实数据，缺失项不伪造。",
+    "无WebGL、减少动态效果或特效加载失败时，核心内容与链接仍可用。",
+    "390px窄屏无横向溢出；按钮可触达；正文不依赖舞台整体缩小。",
+    "弹窗可Esc关闭、焦点返回触发点；浏览器返回后恢复目录上下文。",
+    "数据分页完整，抓取失败不会把目录替换成空数组。",
+    "部署时分别验证用户站点与项目子路径的资源地址。",
+    "LCP≤2.5s、CLS≤0.1为第二步待测目标；本阶段未测得首页成绩。"
+  ],
+  "sources": [
+    {
+      "id": "R1",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "src/style.css",
+      "line": 5,
+      "topic": "浅色底、MiSans、终端布局",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/style.css#L5"
+    },
+    {
+      "id": "R2",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "src/main.ts",
+      "line": 127,
+      "topic": "boot/archive/detail 状态与交互",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/main.ts#L127"
+    },
+    {
+      "id": "R3",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "src/ui-transitions.ts",
+      "line": 1,
+      "topic": "可打断过渡、300/200/150ms",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/ui-transitions.ts#L1"
+    },
+    {
+      "id": "R4",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "src/appearance.ts",
+      "line": 27,
+      "topic": "真实玻璃材质和清晰度揭示",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/appearance.ts#L27"
+    },
+    {
+      "id": "R5",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "src/viewport-layout.ts",
+      "line": 7,
+      "topic": "按屏幕重排与镜头构图",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/viewport-layout.ts#L7"
+    },
+    {
+      "id": "R6",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "content/README.md",
+      "line": 5,
+      "topic": "内容分离与五类八份限制",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/content/README.md#L5"
+    },
+    {
+      "id": "R7",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "src/render-quality.ts",
+      "line": 14,
+      "topic": "画质预设与缓冲像素上限",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/render-quality.ts#L14"
+    },
+    {
+      "id": "R8",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "LICENSE",
+      "line": 1,
+      "topic": "MIT 声明",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/LICENSE#L1"
+    },
+    {
+      "id": "R9",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "src/scene.ts",
+      "line": 471,
+      "topic": "InstancedMesh 档案阵列",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/src/scene.ts#L471"
+    },
+    {
+      "id": "R10",
+      "repo": "LBEILC/RhineLabUI",
+      "sha": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+      "path": "DESIGN.md",
+      "line": 18,
+      "topic": "滚动标题与交互设计依据",
+      "url": "https://github.com/LBEILC/RhineLabUI/blob/12cc5e4013acb9408f753ff71de6b8492299b7c8/DESIGN.md#L18"
+    },
+    {
+      "id": "E1",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/Landing.tsx",
+      "line": 32,
+      "topic": "服务端可读内容、八幕结构",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/Landing.tsx#L32"
+    },
+    {
+      "id": "E2",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/landing.css",
+      "line": 23,
+      "topic": "黑底、字体、竖排、首屏",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/landing.css#L23"
+    },
+    {
+      "id": "E3",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/LightStage.tsx",
+      "line": 34,
+      "topic": "统一帧循环与滚动模型",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/LightStage.tsx#L34"
+    },
+    {
+      "id": "E4",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/model/timeline.ts",
+      "line": 9,
+      "topic": "按屏数编排叙事",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/timeline.ts#L9"
+    },
+    {
+      "id": "E5",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/model/tier.ts",
+      "line": 9,
+      "topic": "五档渲染与降级规则",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/tier.ts#L9"
+    },
+    {
+      "id": "E6",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/stageStore.ts",
+      "line": 27,
+      "topic": "逐帧更新与组件状态分离",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/stageStore.ts#L27"
+    },
+    {
+      "id": "E7",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/canvasStage.ts",
+      "line": 10,
+      "topic": "场景预加载、释放和局部失败",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/canvasStage.ts#L10"
+    },
+    {
+      "id": "E8",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/layout.tsx",
+      "line": 52,
+      "topic": "本地字体子集与首屏预载",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/layout.tsx#L52"
+    },
+    {
+      "id": "E9",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/model/color.ts",
+      "line": 9,
+      "topic": "基础色派生文字、光晕和深底",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/model/color.ts#L9"
+    },
+    {
+      "id": "E10",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/LandingEntry.tsx",
+      "line": 5,
+      "topic": "按意图预取、点击后打开弹窗",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/LandingEntry.tsx#L5"
+    },
+    {
+      "id": "E11",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "docs/adr/0016-landing-page-is-its-own-visual-world.md",
+      "line": 1,
+      "topic": "展示页面与应用的边界、性能预算",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/docs/adr/0016-landing-page-is-its-own-visual-world.md#L1"
+    },
+    {
+      "id": "E12",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "LICENSING.md",
+      "line": 1,
+      "topic": "AGPL 与第三方素材的独立声明",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/LICENSING.md#L1"
+    },
+    {
+      "id": "E13",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/Call.tsx",
+      "line": 89,
+      "topic": "未登录来电展示与开场白播放",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/Call.tsx#L89"
+    },
+    {
+      "id": "E14",
+      "repo": "Sallyn0225/eidolon-sc",
+      "sha": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+      "path": "frontend/src/app/(landing)/CREDITS.md",
+      "line": 1,
+      "topic": "手机模型及字体出处",
+      "url": "https://github.com/Sallyn0225/eidolon-sc/blob/cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5/frontend/src/app/(landing)/CREDITS.md#L1"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "evidence/eidolon-01-opening.png",
+      "title": "Eidolon：黑底首屏与白光",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 0,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-02-prism.png",
+      "title": "Eidolon：棱镜分光",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 2600,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-03-spectrum.png",
+      "title": "Eidolon：组合光谱与竖排姓名",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 6500,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-04-words.png",
+      "title": "Eidolon：原文与字幕的分层",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 22500,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-05-call.png",
+      "title": "Eidolon：来电展示",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 26200,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-06-memory.png",
+      "title": "Eidolon：记忆浮岛场景",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 31200,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-07-closing.png",
+      "title": "Eidolon：结尾光屏与入口",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 40000,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-08-login-panel.png",
+      "title": "Eidolon：未登录弹窗",
+      "site": "eidolon",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": 40000,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-09-mobile.png",
+      "title": "Eidolon：窄屏首屏",
+      "site": "eidolon",
+      "width": 390,
+      "height": 844,
+      "scrollY": 0,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/eidolon-10-reduced-motion.png",
+      "title": "Eidolon：减少动态效果后的分光定格",
+      "site": "eidolon",
+      "width": 390,
+      "height": 844,
+      "scrollY": 900,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-01-entry.png",
+      "title": "RhineLabUI：资源就绪入口",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-02-boot.png",
+      "title": "RhineLabUI：开场片段",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-03-archive.png",
+      "title": "RhineLabUI：档案阵列",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-04-detail.png",
+      "title": "RhineLabUI：档案详情",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-05-viewer.png",
+      "title": "RhineLabUI：独立模型查看器",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-06-exploded.png",
+      "title": "RhineLabUI：拆解与磨砂材质",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-07-search.png",
+      "title": "RhineLabUI：工程研究分类筛选",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-08-settings.png",
+      "title": "RhineLabUI：设置与画质预设",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-09-dark.png",
+      "title": "RhineLabUI：暗色详情",
+      "site": "rhine",
+      "width": 1440,
+      "height": 1000,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    },
+    {
+      "file": "evidence/rhine-10-mobile.png",
+      "title": "RhineLabUI：窄屏详情",
+      "site": "rhine",
+      "width": 390,
+      "height": 844,
+      "scrollY": null,
+      "kind": "browser screenshot",
+      "device": "desktop browser viewport; not physical mobile device"
+    }
+  ],
+  "verificationLimits": [
+    "在线部署未暴露可核对的commit，本报告不宣称线上与main完全一致。",
+    "未登录，未进入私有页面，未进行真实语音通话。",
+    "仅桌面浏览器窄屏模拟，无触摸硬件、Safari实机或Lighthouse数据。",
+    "Rhine页面曾出现manifest.webmanifest连接关闭，主界面与主要交互可用；离线能力未据此确认。"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "project-archive-preservation-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "description": "Source-preserving RhineLabUI + Eidolon-SC skill and integration kit",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "verify": "node .agents/skills/rhine-eidolon-preserve/scripts/verify-upstream.mjs",
+    "test": "node --test --experimental-test-isolation=none tests/materialize.test.mjs",
+    "setup:rhine": "node scripts/reference.mjs rhine setup",
+    "dev:rhine": "node scripts/reference.mjs rhine dev",
+    "build:rhine": "node scripts/reference.mjs rhine build",
+    "setup:eidolon": "node scripts/reference.mjs eidolon setup",
+    "dev:eidolon": "node scripts/reference.mjs eidolon dev",
+    "build:eidolon": "node scripts/reference.mjs eidolon build",
+    "pack": "python scripts/package.py"
+  }
+}

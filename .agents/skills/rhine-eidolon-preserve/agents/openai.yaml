@@ -1,0 +1,4 @@
+interface:
+  display_name: "Rhine × Eidolon 原样保留与适配"
+  short_description: "保留两套原始源码、模型、材质、字体和动效，以薄适配层制作项目总首页"
+  default_prompt: "使用 $rhine-eidolon-preserve，基于随附原始源码继续制作我的项目总首页，优先保留视觉与动效实现。"

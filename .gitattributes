@@ -1,0 +1,12 @@
+* text=auto eol=lf
+.agents/skills/rhine-eidolon-preserve/assets/upstream/** -text
+*.png -text
+*.webp -text
+*.glb -text
+*.blend -text
+*.woff2 -text
+*.ogg -text
+*.mp3 -text
+*.pdf -text
+*.zip -text
+*.skill -text
