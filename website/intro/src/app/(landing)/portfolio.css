@@ -1,0 +1,14 @@
+/* Small content seams; original landing.css and all scenes stay in place. */
+:root { --lp-ja: var(--lp-font-ja-act0), var(--lp-font-ja), var(--lp-font-zh-title-act0), var(--lp-font-zh-title), "Songti SC", "SimSun", serif; }
+.lp-plate { text-decoration: none; color: inherit; }
+.lp-project-count { font: 11px var(--lp-zh); opacity: .55; margin-left: .25rem; }
+.lp-footer { gap: 1rem; }
+.lp-footer span { opacity: .3; margin: 0 .55rem; }
+.lp-top { flex-wrap: wrap; }
+.lp-top > a { white-space: nowrap; }
+.lp-credits { max-width: 780px; margin: 0 auto; padding: 8rem 1.5rem 5rem; color: #c5c6cd; font: 15px/1.9 var(--lp-zh); }
+.lp-credits h1 { color: #f1f1f5; font: 600 clamp(2rem,5vw,3rem)/1.35 var(--lp-zh-title); margin: 2.5rem 0; }
+.lp-credits h2 { margin: 2.5rem 0 1rem; color: #eee; font-size: 1.15rem; }
+.lp-credits a { text-decoration: underline; text-underline-offset: 4px; }
+.lp-credits .lp-credit-nav { display:flex;gap:1.5rem;flex-wrap:wrap; }
+@media(max-width:540px) { .lp-top { gap: .1rem; } .lp-top > a { font-size: 12px; padding-inline: .65rem; } .lp-top .lp-project-count { display: none; } }

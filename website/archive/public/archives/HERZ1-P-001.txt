@@ -1,0 +1,19 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-001 / 项目档案馆
+project-archive
+
+语言：TypeScript
+最近推送：2026-10-29
+仓库：Herz1/project-archive
+状态：持续建设
+
+以 RhineLabUI 与 Eidolon-SC 的原始实现为基础，保存可复用 Skill、源码整合包与个人项目总首页。
+
+项目说明
+1. 随包保留两套参考的源码、模型、字体与动效，并提供逐文件校验。
+2. 个人首页将光谱入口与三维档案相连，展示全部公开项目。
+
+源码：https://github.com/Herz1/project-archive
+在线演示：https://herz1.github.io/project-archive/
+
+公开数据同步：2026-10-29T18:18:43.907Z

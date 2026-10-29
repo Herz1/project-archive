@@ -1,11 +1,13 @@
-# Project Archive · Rhine × Eidolon
+# Herz1 · Project Archive
 
-保留原始实现，再继续做个人项目总首页。
+**[打开个人首页](https://herz1.github.io/project-archive/)** · [全部项目](https://herz1.github.io/project-archive/projects/) · [三维档案](https://herz1.github.io/project-archive/archive/)
 
-当前交付是 **可复用 Skill + 原样源码整合包**。后续 Herz1 的项目总首页也在这个仓库开发；目前尚未把参考内容替换成个人网站。
+项目、界面与个人实验。将 Herz1 的全部公开 GitHub 仓库放进光谱与玻璃档案阵列，包括 Fork、空仓库、资源和学习记录。
 
-![Rhine 原始详情](research/phase-1/evidence/rhine-04-detail.png)
-![Eidolon 原始分光](research/phase-1/evidence/eidolon-02-prism.png)
+沿用 RhineLabUI 与 Eidolon-SC 的原始实现：先在源码上换真实项目、品牌、链接和数量映射，再连接两套体验。保留完整八幕、原始开场、材质、模型、着色器与交互。另有无需三维和 JavaScript 即可访问的完整目录。
+
+![Herz1 个人首页](website/docs/screenshots/home-desktop.png)
+![真实项目光谱](website/docs/screenshots/spectrum-desktop.png)
 
 ## 包里有什么
 
@@ -15,12 +17,29 @@
 | Rhine 原始层 | 1,007 个文件；Web 源码、GLB、Blender 工程、字体、音频、内容和构建脚本 |
 | Eidolon 原始层 | 499 个文件；前端源码、落地页字体、光层、时间线、手机模型和配套实现 |
 | 保留证据 | 每个文件的 Git blob、SHA-256、字节数及固定上游提交 |
-| 预览适配 | 复制原版运行材料；Eidolon 只替换数据入口和无后台接口，视觉组件没有重写 |
+| 个人网站 | `website/intro` + `website/archive`，独立框架边界，合并为 GitHub Pages 静态站 |
+| 轻量目录 | 全部公开项目的标准 HTML 链接；支持名称、标签、分类、语言与排序 |
+| 预览适配 | 仍可生成两套原始体验，用于后续源码对照 |
 | 首轮研究 | [图文报告](research/phase-1/reference-study.html)、20 张截图和 24 处源码定位 |
 
 选入包内的 **1,506 个上游文件保持字节一致**，约 55.9 MiB。这里的“原样”有校验清单支撑，不表示打包了两个仓库的全部历史、后台或原站外部素材。
 
-## 快速运行
+## 运行个人网站
+
+使用 Node.js 24。在仓库根目录执行：
+
+```sh
+npm run setup:website
+npm run build:website
+npm run test:website
+npm run preview:website
+```
+
+打开 http://127.0.0.1:4173/project-archive/ 。`npm run sync:projects` 更新全部公开仓库；人工展示文字与已确认的 Demo 位于 `website/content/projects.curated.json`。推送到 main 后由 GitHub Actions 构建、检查并发布。浏览器不需要 token。
+
+完整开发和更新方法见 [website/README.md](website/README.md)，实际保留与适配证据见 [实现记录](website/docs/implementation.md)。
+
+## 运行原始参考
 
 需要 Node.js 22.18+ 和 npm。根项目无需安装依赖。
 
@@ -53,11 +72,9 @@ Eidolon 预览保留原始光、字体、分组、滚动和三维场景；使用
 
 独立 Skill 包也包含源码与适配器。它不依赖这个仓库的研究报告才能运行。完整用法见 [运行与整合](.agents/skills/rhine-eidolon-preserve/references/integration.md)。
 
-## 第二步从哪里继续
+## 原始层与工作副本
 
-以选定参考生成 `website/` 工作副本，在原始实现上接入 Herz1 的真实项目。优先修改数据、链接、品牌和必要的布局接缝；不要重新搭一个无关模板。
-
-最新要求是“最大化保留原来的精髓，允许大量原样保留”。[阶段二约定](docs/phase-2-handoff.md) 记录了这一优先级；第一步报告里缩短开场、默认重写的建议只保留为历史讨论。
+原始层继续保持 1,506 个文件逐字节一致；个人站在独立的 `website/` 工作副本上修改。[复用报告](website/docs/preservation-report.json) 逐文件区分原样内容、仅换行差异、适配与未复制文件，未以截图相似度冒充代码复用。第一步研究和 v0.1.0 Skill 发布仍保留，后续站点维护也继续使用同一 Skill。
 
 ## 下载与打包
 

@@ -1,0 +1,18 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-013 / Git 学习
+learngit
+
+语言：未指定语言
+最近推送：2023-11-30
+仓库：Herz1/learngit
+状态：空仓库
+
+Git 学习仓库。目前为空仓库，仍在全部项目目录中保留入口。
+
+项目说明
+1. 当前没有默认分支或可读项目文件。
+2. 保留真实空仓库状态，不填充演示内容。
+
+源码：https://github.com/Herz1/learngit
+
+公开数据同步：2026-10-29T18:18:43.907Z

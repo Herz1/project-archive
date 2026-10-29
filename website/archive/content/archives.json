@@ -1,0 +1,448 @@
+{
+  "categories": [
+    "个人网站",
+    "音乐与创作",
+    "开源与工具",
+    "应用与实验",
+    "学习与记录"
+  ],
+  "columns": [
+    "个人网站",
+    "音乐与创作",
+    "开源与工具",
+    "应用与实验",
+    "学习与记录"
+  ],
+  "records": [
+    {
+      "id": "P-001",
+      "repoId": 1438623955,
+      "title": "项目档案馆",
+      "en": "project-archive",
+      "department": "TypeScript",
+      "category": "开源与工具",
+      "date": "2026-10-29",
+      "lead": "Herz1/project-archive",
+      "clearance": "持续建设",
+      "abstract": "以 RhineLabUI 与 Eidolon-SC 的原始实现为基础，保存可复用 Skill、源码整合包与个人项目总首页。",
+      "findings": [
+        "随包保留两套参考的源码、模型、字体与动效，并提供逐文件校验。",
+        "个人首页将光谱入口与三维档案相连，展示全部公开项目。"
+      ],
+      "source": "https://github.com/Herz1/project-archive",
+      "url": "https://github.com/Herz1/project-archive",
+      "demo": "https://herz1.github.io/project-archive/",
+      "tags": [
+        "TypeScript",
+        "Three.js",
+        "Skill"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": "AGPL-3.0",
+      "createdAt": "2026-10-29T15:41:56Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-002",
+      "repoId": 1352082666,
+      "title": "远征手账",
+      "en": "ensei-techo",
+      "department": "TypeScript",
+      "category": "应用与实验",
+      "date": "2026-10-27",
+      "lead": "Herz1/ensei-techo",
+      "clearance": "应用工程",
+      "abstract": "面向赴日观演用户的演出发现与远征行程管理应用，整合官方购票跳转、场馆交通、地图探索与收藏。",
+      "findings": [
+        "按日期、地区、类型和价格筛选演出，提供多语言模糊搜索与日本地图。",
+        "收藏、日程、ICS 日历导出与 JSON 备份在浏览器本地完成。",
+        "仓库将官方来源的候选采集、人工审核与正式数据发布分开维护。"
+      ],
+      "source": "https://github.com/Herz1/ensei-techo",
+      "url": "https://github.com/Herz1/ensei-techo",
+      "demo": null,
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "MapLibre",
+        "Three.js"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": null,
+      "createdAt": "2026-08-31T06:37:38Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-003",
+      "repoId": 1435518762,
+      "title": "八木海莉应援站",
+      "en": "kaeri-yagi-fan-site-development",
+      "department": "TypeScript",
+      "category": "音乐与创作",
+      "date": "2026-10-27",
+      "lead": "Herz1/kaeri-yagi-fan-site-development",
+      "clearance": "在线可访问",
+      "abstract": "八木海莉非官方应援站，保留原站页面、素材、动效、音乐试听与互动，并迁移到 GitHub Pages。",
+      "findings": [
+        "从原站源码迁移，保留页面内容、样式、动效与交互。",
+        "应援打卡、留言和周边收藏保存在访问者的浏览器中。"
+      ],
+      "source": "https://github.com/Herz1/kaeri-yagi-fan-site-development",
+      "url": "https://github.com/Herz1/kaeri-yagi-fan-site-development",
+      "demo": "https://herz1.github.io/kaeri-yagi-fan-site-development/",
+      "tags": [
+        "React",
+        "TypeScript",
+        "Vite"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": null,
+      "createdAt": "2026-10-27T09:32:46Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-004",
+      "repoId": 1346274321,
+      "title": "幻想郷通信",
+      "en": "hrez1yun",
+      "department": "JavaScript",
+      "category": "个人网站",
+      "date": "2026-10-27",
+      "lead": "Herz1/hrez1yun",
+      "clearance": "在线可访问",
+      "abstract": "东方 Project 风格的纯静态个人博客，以幻想乡、昼夜场景、弹幕和细腻的阅读交互组织日常记录。",
+      "findings": [
+        "零构建、零依赖；本地与静态托管保持一致的访问体验。",
+        "昼夜场景、环境弹幕、桌宠、标签归档与独立文章页。"
+      ],
+      "source": "https://github.com/Herz1/hrez1yun",
+      "url": "https://github.com/Herz1/hrez1yun",
+      "demo": "https://herz1.github.io/hrez1yun/",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "静态网站"
+      ],
+      "stars": 1,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": "MIT",
+      "createdAt": "2026-08-25T15:01:48Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-005",
+      "repoId": 869884723,
+      "title": "兔山手帖",
+      "en": "herz1.github.io",
+      "department": "HTML",
+      "category": "个人网站",
+      "date": "2026-10-27",
+      "lead": "Herz1/herz1.github.io",
+      "clearance": "在线可访问",
+      "abstract": "致敬《玉子市场》治愈气质的静态个人博客，以手绘 SVG 商店街、昼夜场景和日常文章构成站点。",
+      "findings": [
+        "手绘 SVG 商店街与昼夜场景，配合樱花、看板娘和原创八音盒音效。",
+        "提供文章归档、全站搜索、阅读进度和静态博客页面。",
+        "线上未配置的追番 API 保留明确提示，不作为已启用功能展示。"
+      ],
+      "source": "https://github.com/Herz1/herz1.github.io",
+      "url": "https://github.com/Herz1/herz1.github.io",
+      "demo": "https://herz1.github.io/",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Web Audio"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": "MIT",
+      "createdAt": "2024-10-09T04:14:16Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-006",
+      "repoId": 1433998191,
+      "title": "达妮娅·再见",
+      "en": "denia-waiting-for-you",
+      "department": "HTML",
+      "category": "音乐与创作",
+      "date": "2026-10-28",
+      "lead": "Herz1/denia-waiting-for-you",
+      "clearance": "发布包归档",
+      "abstract": "《鸣潮》达妮娅个人粉丝站，完整保存导入的可运行发布包、相册、二创与互动页面。",
+      "findings": [
+        "仓库保留 71 个原始发布文件和既有页面，不将编译产物冒充原始 React 工程。",
+        "包含相册、造梦者、二创区、互动区、友链与日报等入口。",
+        "部分图库接口依赖单独配置的归档服务；当前未列为公开在线预览。"
+      ],
+      "source": "https://github.com/Herz1/denia-waiting-for-you",
+      "url": "https://github.com/Herz1/denia-waiting-for-you",
+      "demo": null,
+      "tags": [
+        "HTML",
+        "发布包",
+        "粉丝站"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": "MIT",
+      "createdAt": "2026-10-26T06:37:39Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-007",
+      "repoId": 1438231162,
+      "title": "音乐与影像",
+      "en": "music-mv",
+      "department": "未指定语言",
+      "category": "音乐与创作",
+      "date": "2026-10-29",
+      "lead": "Herz1/music-mv",
+      "clearance": "创作记录",
+      "abstract": "保存音频文件与歌词文档的音乐创作仓库。",
+      "findings": [
+        "当前公开文件包括音频、歌词文档与 README。",
+        "本页仅提供仓库入口，不虚构在线 MV 播放器。"
+      ],
+      "source": "https://github.com/Herz1/music-mv",
+      "url": "https://github.com/Herz1/music-mv",
+      "demo": null,
+      "tags": [
+        "音频",
+        "歌词文档"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": null,
+      "createdAt": "2026-10-29T09:54:55Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-008",
+      "repoId": 1384613879,
+      "title": "JRPG 制作工程",
+      "en": "Game",
+      "department": "TypeScript",
+      "category": "应用与实验",
+      "date": "2026-10-07",
+      "lead": "Herz1/Game",
+      "clearance": "制作工程",
+      "abstract": "以 HD-2D 日式幻想 JRPG 为目标的制作工程，集中维护策划、叙事、美术、技术、测试与交接材料。",
+      "findings": [
+        "项目将产品目标、玩法、世界观、美术、技术和验收文档分开维护。",
+        "仓库包含 src、assets、build 与 tests；当前未配置公开试玩地址。"
+      ],
+      "source": "https://github.com/Herz1/Game",
+      "url": "https://github.com/Herz1/Game",
+      "demo": null,
+      "tags": [
+        "TypeScript",
+        "游戏制作"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": null,
+      "createdAt": "2026-09-24T04:03:33Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-009",
+      "repoId": 1383536412,
+      "title": "鹈鹕杯",
+      "en": "tihu-artist",
+      "department": "未指定语言",
+      "category": "音乐与创作",
+      "date": "2026-09-23",
+      "lead": "Herz1/tihu-artist",
+      "clearance": "初始记录",
+      "abstract": "以“鹈鹕杯”为简介的项目记录。目前公开入口主要为 README 与仓库信息。",
+      "findings": [
+        "保留原始项目名称与仓库入口。",
+        "当前仓库尚未提供完整功能说明或在线预览。"
+      ],
+      "source": "https://github.com/Herz1/tihu-artist",
+      "url": "https://github.com/Herz1/tihu-artist",
+      "demo": null,
+      "tags": [
+        "项目记录"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": null,
+      "createdAt": "2026-09-23T13:47:48Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-010",
+      "repoId": 818669550,
+      "title": "Hexo 主题 Fork",
+      "en": "hexo-theme-sungod",
+      "department": "未指定语言",
+      "category": "开源与工具",
+      "date": "2026-10-07",
+      "lead": "Herz1/hexo-theme-sungod",
+      "clearance": "Fork 收藏",
+      "abstract": "定制化 Hexo 博客主题的 Fork 仓库；保留原项目与 Apache-2.0 许可信息。",
+      "findings": [
+        "本项目明确标记为 Fork，不作为完全原创主题展示。",
+        "仓库填写的主页为上游站点，因此本档案不将其列为个人 Demo。"
+      ],
+      "source": "https://github.com/Herz1/hexo-theme-sungod",
+      "url": "https://github.com/Herz1/hexo-theme-sungod",
+      "demo": null,
+      "tags": [
+        "EJS",
+        "Hexo",
+        "Fork"
+      ],
+      "stars": 0,
+      "fork": true,
+      "archived": false,
+      "empty": false,
+      "license": "Apache-2.0",
+      "createdAt": "2024-06-22T14:04:43Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-011",
+      "repoId": 871531036,
+      "title": "静态资源",
+      "en": "static.resource",
+      "department": "未指定语言",
+      "category": "开源与工具",
+      "date": "2024-10-12",
+      "lead": "Herz1/static.resource",
+      "clearance": "资源归档",
+      "abstract": "公开静态资源仓库，当前未填写具体用途说明。",
+      "findings": [
+        "按公开仓库元数据收录。",
+        "未配置独立预览地址，完整内容以仓库文件为准。"
+      ],
+      "source": "https://github.com/Herz1/static.resource",
+      "url": "https://github.com/Herz1/static.resource",
+      "demo": null,
+      "tags": [
+        "静态资源"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": null,
+      "createdAt": "2024-10-12T08:10:40Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-012",
+      "repoId": 818689495,
+      "title": "Pages 学习",
+      "en": "skills-github-pages",
+      "department": "未指定语言",
+      "category": "学习与记录",
+      "date": "2025-12-02",
+      "lead": "Herz1/skills-github-pages",
+      "clearance": "学习记录",
+      "abstract": "以 GitHub Pages 为主题的学习仓库，保留公开代码与学习入口。",
+      "findings": [
+        "仓库当前简介为 My clone repository。",
+        "本档案提供源仓库入口，不将其误标为已上线的独立产品。"
+      ],
+      "source": "https://github.com/Herz1/skills-github-pages",
+      "url": "https://github.com/Herz1/skills-github-pages",
+      "demo": null,
+      "tags": [
+        "GitHub Pages",
+        "学习"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": false,
+      "license": "MIT",
+      "createdAt": "2024-06-22T15:11:45Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-013",
+      "repoId": 725645939,
+      "title": "Git 学习",
+      "en": "learngit",
+      "department": "未指定语言",
+      "category": "学习与记录",
+      "date": "2023-11-30",
+      "lead": "Herz1/learngit",
+      "clearance": "空仓库",
+      "abstract": "Git 学习仓库。目前为空仓库，仍在全部项目目录中保留入口。",
+      "findings": [
+        "当前没有默认分支或可读项目文件。",
+        "保留真实空仓库状态，不填充演示内容。"
+      ],
+      "source": "https://github.com/Herz1/learngit",
+      "url": "https://github.com/Herz1/learngit",
+      "demo": null,
+      "tags": [
+        "Git",
+        "空仓库"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": true,
+      "license": null,
+      "createdAt": "2023-11-30T15:23:27Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    },
+    {
+      "id": "P-014",
+      "repoId": 563797999,
+      "title": "Shell 记录",
+      "en": "forsh",
+      "department": "未指定语言",
+      "category": "学习与记录",
+      "date": "2022-11-09",
+      "lead": "Herz1/forsh",
+      "clearance": "空仓库",
+      "abstract": "名为 forsh 的公开仓库。目前为空仓库，尚未填写简介。",
+      "findings": [
+        "当前没有默认分支或项目文件。",
+        "项目用途尚未说明，按原始公开信息保留。"
+      ],
+      "source": "https://github.com/Herz1/forsh",
+      "url": "https://github.com/Herz1/forsh",
+      "demo": null,
+      "tags": [
+        "空仓库"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false,
+      "empty": true,
+      "license": null,
+      "createdAt": "2022-11-09T11:06:44Z",
+      "syncedAt": "2026-10-29T18:18:43.907Z"
+    }
+  ]
+}

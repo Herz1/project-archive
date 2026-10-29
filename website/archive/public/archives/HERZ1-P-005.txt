@@ -1,0 +1,20 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-005 / 兔山手帖
+herz1.github.io
+
+语言：HTML
+最近推送：2026-10-27
+仓库：Herz1/herz1.github.io
+状态：在线可访问
+
+致敬《玉子市场》治愈气质的静态个人博客，以手绘 SVG 商店街、昼夜场景和日常文章构成站点。
+
+项目说明
+1. 手绘 SVG 商店街与昼夜场景，配合樱花、看板娘和原创八音盒音效。
+2. 提供文章归档、全站搜索、阅读进度和静态博客页面。
+3. 线上未配置的追番 API 保留明确提示，不作为已启用功能展示。
+
+源码：https://github.com/Herz1/herz1.github.io
+在线演示：https://herz1.github.io/
+
+公开数据同步：2026-10-29T18:18:43.907Z

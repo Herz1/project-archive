@@ -33,3 +33,9 @@ The research screenshots retain original-site imagery for reference analysis. Th
 ## Adaptation record
 
 The source layer has no integration edits. Materialization creates an editable copy and records applied adapters in `reference-kit.json`. The small Eidolon adapters replace backend-fed entry data and local preview interfaces; they do not rewrite its visual modules.
+
+The personal website additionally adapts copies in `website/archive` and `website/intro`; the immutable source layer above is unchanged. Rhine's MIT license is retained in its working copy. The adapted Eidolon frontend and new integration code are distributed under the root AGPL-3.0-or-later license. Source is linked in the website footer and `/about/`.
+
+The personal site retains original shaders, timeline, glass and phone geometry, animation systems, font families and supplied attribution files. Project data, branding, links, deployment paths and variable-length navigation are adapted. New Chinese WOFF2 subsets use official Noto CJK fonts under SIL OFL. Personal boot phrase artwork reuses supplied original glyph outlines where available and uses Noto outlines for missing characters; no commercial font binaries were added. Procedural project actors use the upstream colour-block fallback, without redistributed character assets.
+
+See `website/docs/preservation-report.json` for per-file reuse evidence, and `website/docs/implementation.md` for the adaptation and verification record.

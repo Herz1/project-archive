@@ -1,0 +1,9 @@
+{
+  "reference": "rhine",
+  "commit": "12cc5e4013acb9408f753ff71de6b8492299b7c8",
+  "immutableSourceVerified": true,
+  "purpose": "Herz1 personal project homepage",
+  "applied": ["Real public repository data and stable project deep links", "Personal branding and boot phrase outlines", "Variable category lengths and unbounded navigation", "Source/demo links and lightweight directory fallback", "GitHub Pages base path"],
+  "previewOnly": false,
+  "excludedRuntimePaths": []
+}

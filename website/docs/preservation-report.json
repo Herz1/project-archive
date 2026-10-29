@@ -1,0 +1,6029 @@
+{
+  "method": "Compare each selected original file with the same path in the website working copy. same-text-eol normalizes CRLF/LF only; adapted may include content-only edits. Not a line-percentage claim. Immutable original snapshot verification is separate.",
+  "sources": [
+    {
+      "name": "Rhine",
+      "from": "rhine",
+      "to": "website/archive",
+      "total": 1007,
+      "counts": {
+        "same-bytes": 898,
+        "same-text-eol": 53,
+        "adapted": 16,
+        "not-copied": 40
+      },
+      "files": [
+        {
+          "path": ".gitignore",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/archive-assembly.blend",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/archive-studio.png",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/build_archive.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/build_assembly.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/clear_reference_details.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/internal_architecture.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/model_precision.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/model-precision.blend",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/rhine-archive.blend",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/setup_studio.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "art/shell_reference_details.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "content/archives.json",
+          "status": "adapted"
+        },
+        {
+          "path": "content/README.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "DESIGN.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "index.html",
+          "status": "adapted"
+        },
+        {
+          "path": "LICENSE",
+          "status": "same-bytes"
+        },
+        {
+          "path": "package-lock.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "package.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "PR15-ATTRIBUTION.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-001.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-002.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-003.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-004.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-005.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-006.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-007.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-008.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-009.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-010.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-011.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-012.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-013.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-014.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-015.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-016.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-017.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-018.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-019.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-020.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-021.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-022.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-023.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-024.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-025.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-026.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-027.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-028.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-029.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-030.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-031.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-032.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-033.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-034.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-035.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-036.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-037.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-038.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-039.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/archives/RHINE-LAB-X-040.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "public/assets/archive-assembly.glb",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/assets/archive-cassette.glb",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/assets/boot-lettering-notice.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/atmosphere.ogg",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/motif.ogg",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/observatory-preview.mp3",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/pulse.ogg",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/README.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/score.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/typing-preview.wav",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/audio/typing-source.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/favicon.svg",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/MiSans-license.pdf",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/0.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/1.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/10.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/100.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/101.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/102.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/103.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/104.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/105.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/106.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/107.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/108.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/109.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/11.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/110.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/111.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/112.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/113.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/114.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/115.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/116.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/117.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/118.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/119.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/12.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/120.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/121.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/122.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/123.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/124.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/125.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/126.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/127.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/128.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/129.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/13.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/130.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/131.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/132.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/133.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/134.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/135.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/136.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/137.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/138.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/139.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/14.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/140.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/141.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/142.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/143.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/144.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/145.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/146.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/147.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/148.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/149.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/15.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/150.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/151.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/152.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/153.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/154.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/155.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/156.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/157.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/158.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/159.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/16.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/160.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/161.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/162.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/163.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/164.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/165.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/166.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/167.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/168.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/169.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/17.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/170.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/171.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/172.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/173.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/174.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/175.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/176.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/177.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/178.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/179.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/18.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/180.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/181.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/182.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/183.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/184.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/185.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/186.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/187.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/188.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/19.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/2.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/20.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/21.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/22.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/23.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/24.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/25.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/26.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/27.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/28.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/29.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/3.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/30.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/31.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/32.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/33.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/34.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/35.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/36.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/37.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/38.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/39.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/4.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/40.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/41.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/42.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/43.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/44.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/45.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/46.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/47.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/48.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/49.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/5.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/50.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/51.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/52.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/53.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/54.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/55.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/56.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/57.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/58.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/59.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/6.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/60.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/61.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/62.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/63.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/64.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/65.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/66.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/67.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/68.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/69.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/7.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/70.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/71.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/72.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/73.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/74.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/75.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/76.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/77.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/78.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/79.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/8.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/80.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/81.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/82.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/83.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/84.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/85.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/86.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/87.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/88.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/89.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/9.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/90.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/91.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/92.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/93.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/94.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/95.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/96.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/97.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/98.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/99.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/bold/upstream.css.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/0.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/1.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/10.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/100.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/101.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/102.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/103.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/104.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/105.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/106.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/107.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/108.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/109.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/11.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/110.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/111.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/112.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/113.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/114.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/115.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/116.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/117.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/118.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/119.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/12.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/120.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/121.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/122.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/123.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/124.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/125.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/126.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/127.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/128.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/129.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/13.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/130.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/131.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/132.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/133.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/134.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/135.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/136.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/137.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/138.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/139.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/14.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/140.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/141.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/142.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/143.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/144.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/145.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/146.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/147.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/148.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/149.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/15.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/150.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/151.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/152.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/153.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/154.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/155.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/156.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/157.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/158.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/159.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/16.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/160.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/161.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/162.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/163.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/164.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/165.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/166.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/167.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/168.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/169.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/17.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/170.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/171.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/172.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/173.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/174.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/175.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/176.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/177.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/178.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/179.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/18.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/180.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/181.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/182.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/183.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/184.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/185.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/186.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/187.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/19.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/2.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/20.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/21.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/22.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/23.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/24.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/25.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/26.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/27.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/28.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/29.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/3.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/30.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/31.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/32.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/33.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/34.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/35.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/36.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/37.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/38.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/39.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/4.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/40.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/41.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/42.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/43.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/44.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/45.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/46.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/47.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/48.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/49.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/5.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/50.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/51.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/52.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/53.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/54.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/55.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/56.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/57.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/58.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/59.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/6.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/60.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/61.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/62.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/63.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/64.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/65.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/66.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/67.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/68.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/69.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/7.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/70.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/71.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/72.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/73.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/74.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/75.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/76.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/77.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/78.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/79.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/8.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/80.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/81.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/82.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/83.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/84.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/85.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/86.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/87.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/88.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/89.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/9.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/90.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/91.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/92.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/93.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/94.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/95.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/96.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/97.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/98.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/99.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/demibold/upstream.css.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/0.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/1.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/10.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/100.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/101.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/102.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/103.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/104.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/105.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/106.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/107.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/108.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/109.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/11.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/110.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/111.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/112.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/113.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/114.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/115.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/116.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/117.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/118.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/119.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/12.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/120.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/121.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/122.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/123.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/124.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/125.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/126.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/127.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/128.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/129.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/13.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/130.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/131.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/132.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/133.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/134.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/135.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/136.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/137.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/138.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/139.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/14.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/140.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/141.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/142.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/143.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/144.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/145.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/146.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/147.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/148.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/149.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/15.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/150.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/151.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/152.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/153.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/154.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/155.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/156.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/157.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/158.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/159.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/16.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/160.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/161.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/162.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/163.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/164.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/165.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/166.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/167.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/168.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/169.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/17.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/170.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/171.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/172.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/173.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/174.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/175.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/176.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/177.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/178.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/179.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/18.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/180.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/181.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/182.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/183.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/184.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/185.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/186.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/187.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/19.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/2.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/20.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/21.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/22.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/23.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/24.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/25.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/26.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/27.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/28.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/29.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/3.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/30.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/31.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/32.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/33.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/34.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/35.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/36.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/37.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/38.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/39.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/4.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/40.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/41.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/42.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/43.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/44.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/45.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/46.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/47.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/48.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/49.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/5.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/50.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/51.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/52.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/53.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/54.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/55.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/56.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/57.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/58.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/59.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/6.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/60.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/61.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/62.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/63.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/64.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/65.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/66.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/67.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/68.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/69.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/7.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/70.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/71.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/72.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/73.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/74.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/75.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/76.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/77.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/78.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/79.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/8.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/80.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/81.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/82.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/83.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/84.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/85.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/86.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/87.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/88.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/89.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/9.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/90.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/91.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/92.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/93.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/94.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/95.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/96.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/97.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/98.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/99.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/light/upstream.css.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/0.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/1.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/10.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/100.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/101.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/102.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/103.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/104.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/105.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/106.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/107.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/108.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/109.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/11.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/110.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/111.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/112.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/113.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/114.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/115.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/116.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/117.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/118.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/119.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/12.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/120.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/121.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/122.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/123.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/124.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/125.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/126.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/127.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/128.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/129.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/13.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/130.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/131.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/132.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/133.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/134.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/135.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/136.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/137.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/138.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/139.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/14.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/140.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/141.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/142.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/143.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/144.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/145.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/146.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/147.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/148.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/149.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/15.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/150.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/151.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/152.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/153.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/154.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/155.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/156.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/157.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/158.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/159.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/16.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/160.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/161.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/162.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/163.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/164.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/165.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/166.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/167.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/168.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/169.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/17.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/170.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/171.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/172.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/173.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/174.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/175.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/176.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/177.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/178.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/179.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/18.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/180.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/181.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/182.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/183.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/184.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/185.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/186.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/187.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/19.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/2.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/20.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/21.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/22.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/23.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/24.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/25.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/26.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/27.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/28.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/29.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/3.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/30.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/31.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/32.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/33.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/34.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/35.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/36.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/37.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/38.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/39.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/4.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/40.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/41.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/42.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/43.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/44.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/45.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/46.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/47.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/48.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/49.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/5.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/50.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/51.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/52.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/53.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/54.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/55.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/56.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/57.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/58.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/59.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/6.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/60.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/61.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/62.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/63.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/64.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/65.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/66.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/67.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/68.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/69.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/7.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/70.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/71.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/72.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/73.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/74.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/75.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/76.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/77.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/78.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/79.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/8.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/80.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/81.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/82.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/83.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/84.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/85.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/86.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/87.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/88.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/89.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/9.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/90.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/91.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/92.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/93.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/94.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/95.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/96.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/97.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/98.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/99.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/regular/upstream.css.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/source.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/misans-webfont-4.3.1/UPSTREAM-README.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/fonts/NOTICE.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/icons/app-icon.svg",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/icons/apple-touch-icon.png",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/icons/icon-192.png",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/icons/icon-512.png",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/icons/icon-maskable-512.png",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/licenses/rolling-number.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/manifest.webmanifest",
+          "status": "adapted"
+        },
+        {
+          "path": "public/update.html",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/update.js",
+          "status": "same-bytes"
+        },
+        {
+          "path": "README.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/analyze-reference-audio.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/archive-content.mjs",
+          "status": "adapted"
+        },
+        {
+          "path": "scripts/build-icons.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/build-model-precision.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/build-performance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/build-pwa.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/build-wallpaper.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/capture-readme.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-appearance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-archive-diagonal.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-archive-drag.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-archive-momentum.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-archive-visibility.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-archive.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-array-input.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-assembly.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-boot-hud.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-bottom-insets.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-cloudflare-deployment.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-content.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-dark-index.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-decryption.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-font-loading.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-font-update.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-gamepad-browser.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-hud-performance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-internal-optics.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-local-sound.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-loop.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-model-precision-review.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-model-precision.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-motion-integration.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-motion-preferences.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-motion-surfaces.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-motion.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-performance-host.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-performance-invalidation.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-performance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-playground.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-pr15-port.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-pr15-rendering.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-pwa-recovery.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-pwa-redirect.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-pwa.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-quality.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-render-updates.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-responsive.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-selection-state.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-shell.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-startup-2d-host.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-startup-2d.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-startup-entry.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-startup-motion.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-super-performance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-theme.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-three-release.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-viewport.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-visual-effects.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-wallpaper-image-host.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-wallpaper-image.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-wallpaper-mask.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-wallpaper.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-web-integration.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-workbench-rolling.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-workbench.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/compare-font-packages.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/compare-performance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/encode-workshop-preview.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/export-records.mjs",
+          "status": "adapted"
+        },
+        {
+          "path": "scripts/extract-typing-audio.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/make-boot-lettering.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/package-cloudflare.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/package-vercel.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/patch-rolling-number.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/prepare-webfonts.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/pwa-worker.js",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/record-workshop-preview.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/render-audio.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/serve-mobile-review.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/serve-performance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/summarize-model-precision.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/summarize-performance.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/vendor-fonts.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/appearance.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/archive-drag.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/archive-draw-coverage.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/archive-lighting.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/archive-loop.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/archive-play-motion.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/archive-playground.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/archive-playground.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/archive-visibility.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/asset-url.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/audio-settings.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/audio.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/boot-lettering-art.json",
+          "status": "adapted"
+        },
+        {
+          "path": "src/boot-lettering.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/boot-lettering.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/boot-logo-tracks.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/boot-motion.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/boot-orbit-tracks.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/boot-tracks.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/boot.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/brand.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/data.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/decryption.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/decryption.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/document-decryption.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/document-decryption.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/fonts.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/gamepad.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/glass-reveal.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/html.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/hud-projection.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/inspection-overlay.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/instance-updates.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/internal-optics.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/main.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/model-viewer.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/motion-preferences.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/motion.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/pwa.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/quality-renderer.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/quality-settings.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/quality-settings.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/render-quality.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/render-state.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/responsive.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/rolling-clock.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/scene.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/screen-finish.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/shared-depth.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/startup.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/startup.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/style.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/theme-material.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/theme-motion.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/theme-ui.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/theme.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/three-resources.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/typing-rhythm.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/typing-samples.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/ui-transitions.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/viewer-camera.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/viewport-layout.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/vite-env.d.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/wallpaper-background.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/wallpaper-effects.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/wallpaper-effects.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/wallpaper-image-url.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/wallpaper-insets.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/wallpaper-opening.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/wallpaper-quality.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/wallpaper.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/wallpaper.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/workbench-rolling.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/workbench-state.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/workbench-visibility.ts",
+          "status": "same-text-eol"
+        },
+        {
+          "path": "src/workbench.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/workbench.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "tsconfig.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "vercel.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "verification/boot-lettering/webfont-sources.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "vite.config.ts",
+          "status": "adapted"
+        }
+      ]
+    },
+    {
+      "name": "Eidolon frontend",
+      "from": "eidolon/frontend",
+      "to": "website/intro",
+      "total": 492,
+      "counts": {
+        "same-bytes": 439,
+        "same-text-eol": 0,
+        "adapted": 22,
+        "not-copied": 31
+      },
+      "files": [
+        {
+          "path": ".gitignore",
+          "status": "same-bytes"
+        },
+        {
+          "path": "components.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "next.config.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "package-lock.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "package.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "postcss.config.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/CREDITS.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/metal-mesh-color.webp",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/metal-mesh-normal.webp",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/metal-screw-normal.webp",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/phone.bin",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/phone.gltf",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/plastic-antena-normal.webp",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/plastic-led-normal.webp",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/landing/phone/still.webp",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/sounds/connect.ogg",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/sounds/CREDITS.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/sounds/hang-up.mp3",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/sounds/ringback.mp3",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/vendor/spine-3.6/LICENSE",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/vendor/spine-3.6/README.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "public/vendor/spine-3.6/spine-webgl.js",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/app-check.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/bar-assets.py",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/bar-logo.png",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/check-discipline.sh",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/font-css.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/font-css.test.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/glb-voxelize.mts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/landing-check.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/landing-fonts.mts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/landing-memory-still.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/landing-og.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/landing-phone-still.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/landing-phone.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/phone-4g.mjs",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/readme-media.mts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/screenshots.mts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "scripts/stand-thumbnails.mts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(app)/(nav)/(conversations)/conversation/[characterId]/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/(conversations)/conversations/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/(conversations)/layout.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/layout.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/play/[subpage]/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/play/bar/bar.css",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/play/bar/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/play/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/settings/[category]/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/settings/layout.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/(nav)/settings/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/admin/announcements/[id]/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/admin/announcements/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/admin/config/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/admin/layout.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/admin/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/admin/users/[id]/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/admin/users/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/consent/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/layout.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/login/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/privacy/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(app)/terms/page.tsx",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(landing)/about/page.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/Call.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/canvasStage.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/Closing.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/CREDITS.md",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/fonts/coverage.test.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/fonts/fontText.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/fonts/LICENSE-noto-sans-sc.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/fonts/LICENSE-noto-serif-sc.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/fonts/LICENSE-shippori-mincho-b1.txt",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/fonts/noto-sans-sc-400-act0.woff2",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/fonts/noto-sans-sc-400.woff2",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/fonts/noto-serif-sc-600-act0.woff2",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/fonts/noto-serif-sc-600.woff2",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/fonts/shippori-mincho-b1-600-act0.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/fonts/shippori-mincho-b1-600.woff2",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/fonts/subset.json",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/idle.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/interactionStore.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/landing.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/Landing.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/LandingEntry.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/layout.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/light.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/LightStage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/Memory.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/memoryDressing.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/memoryKit.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/memoryLayer.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/MemoryStill.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/act2.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/act34.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/act5.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/act7.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/color.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/color.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/interaction.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/interaction.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/memory.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/memoryStory.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/memoryStory.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/oklab.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/phone.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/scene.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/scene.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/spectrum.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/spectrum.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/spring.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/spring.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/tier.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/tier.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/timeline.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/model/timeline.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/opengraph-image.alt.txt",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(landing)/opengraph-image.jpg",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/(landing)/page.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/phoneLayer.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/phoneStage.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/Rail.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/SignInPanel.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/Spectrum.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/(landing)/stageStore.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/StandSlot.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/StaticLight.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/tierScript.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/(landing)/Voice.tsx",
+          "status": "adapted"
+        },
+        {
+          "path": "src/app/api/[...path]/route.test.ts",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/api/[...path]/route.ts",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/apple-icon.png",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/favicon.ico",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/app/globals.css",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/app/icon.svg",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/components/AboutSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/AdminDashboard.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/AdminInvites.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/AdminSponsor.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/BackupCard.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/CostSection.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/DashboardParts.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/OpenForm.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/ResetCardGrants.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/TrendChart.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/admin/useSubmitCheck.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AdminAnnouncementEditor.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AdminAnnouncementList.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AdminConfig.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AdminEntry.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AdminPrices.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AdminUserDetails.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AdminUserList.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/AchievementLine.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/AdminPage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/AdminShell.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/AdminTrail.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/MetadataList.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/Notice.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/NumberInput.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/StatTile.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/admin/Timestamp.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/AnnouncementBody.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/AppLink.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/AppNav.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/FailureNotice.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/ImageViewer.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/LLMProviderPicker.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/MarkedAvatar.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/ModelChoiceField.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/NavShell.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/PageShell.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/ReasoningEffortFields.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/SettingsSection.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/ShellLink.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/SignInChoices.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/StatusDot.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/SubpageHeader.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/app/TierHeart.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/AppearanceSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/BanUserDialog.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/CallSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/AchievementsPanel.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/AffinityBadge.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/Announcements.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/CallBar.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/CallLayer.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/ConversationDirectory.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/ConversationList.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/ConversationView.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/EventIcon.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/ListFilter.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/MicSheet.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/OutfitPicker.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/PastConversations.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/PhotoBlock.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/PhotoViewer.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/PreviewText.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/ServiceStatusButton.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/stand/spineRuntime.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/stand/Stand.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/stand/StandEngine.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useCallTime.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useCallTones.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useFocusBack.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useHerAchievements.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/usePastConversation.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useProducerTimezone.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useSavedSize.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useScheduleOn.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/conversations/useStandOutfits.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/CyclesSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/DataPackageSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/DeleteAccount.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/gifts/AchievementsSection.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/gifts/DrawDialog.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/gifts/GiftTile.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/gifts/GivenToast.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/gifts/GivePanel.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/gifts/MyGifts.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/gifts/ResetCards.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/LegalFooter.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/MemoriesSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/OwnKeysSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/AchievementsSubpage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarButton.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarCounter.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarDoor.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarEndCard.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarGuest.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarJukebox.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarRecipeBook.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarRoom.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarScreen.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarSettingsBox.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarSubpage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/BarTextBox.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/drinkSprites.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/ink.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/PixelText.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/PortraitGuard.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/sceneOnScreen.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/Sprite.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useBarFullscreen.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useBarJukebox.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useBarSettings.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useBarSound.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useBarTutorial.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useBarVisit.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useShakerDrag.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/bar/useTypingClock.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/CalendarSubpage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/CycleGuide.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/CyclesSubpage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/GiftsSubpage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/HerStrip.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/PlayCardLink.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/PlayPage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/PlayShell.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/ScheduleWeek.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/useBar.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/useCalendar.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/useCycles.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/play/usePlayState.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/PrivacyContact.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ProducerProfileSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ReachOutsSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/settings/SettingsCategoryPage.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/settings/SettingsPane.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/settings/SettingsRow.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/settings/SettingsValues.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/settings/SponsorRow.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/SignInSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/SignOutSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/stats/Heatmap.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/stats/HourChart.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/stats/ShareButton.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/stats/ShareCard.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/StatsSettings.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/accordion.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/alert-dialog.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/alert.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/avatar.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/badge.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/breadcrumb.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/bubble.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/button.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/card.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/checkbox.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/combobox.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/context-menu.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/dialog.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/drawer.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/dropdown-menu.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/empty.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/field.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/input-group.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/input.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/label.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/message-scroller.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/message.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/popover.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/radio-group.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/resizable.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/select.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/separator.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/sheet.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/sidebar.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/skeleton.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/spinner.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/switch.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/table.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/tabs.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/textarea.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/toggle-group.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/toggle.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/ui/tooltip.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/components/UserLimitsDialog.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/hooks/use-mobile.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/hooks/useHydrated.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/hooks/useMediaQuery.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/hooks/useWhileVisible.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/i18n/index.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/i18n/index.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/i18n/interpolate.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/i18n/interpolate.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/i18n/zh.ts",
+          "status": "adapted"
+        },
+        {
+          "path": "src/lib/achievements.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/achievements.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/admin.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/admin.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminConfig.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminConfig.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminGifts.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminInvites.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminPrices.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminPrices.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminSponsor.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminUsers.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/adminUsers.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/affinity.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/affinity.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/announcements.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/announcements.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/api.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/api.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/appearance.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/appearance.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/backend.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/backend.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/backups.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/backups.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barAudio.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barAudio.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barAudio.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barCatalogFixture.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barJukebox.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barJukebox.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barMixer.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barMixer.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barRecipeBook.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barRecipeBook.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barScene.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barScene.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barScreen.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barScreen.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barSettings.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barSettings.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barText.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barText.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barTutorial.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barTutorial.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barTutorialLines.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barTutorialLines.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barVisit.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barVisit.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barVisitSession.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/barVisitSession.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/calendar.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/calendar.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/calendarFilter.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/calendarFilter.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/call.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/call.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callEnd.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callEnd.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callFocus.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callFocus.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callPreferences.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callPreferences.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callTime.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/callTime.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/characterSearch.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/characterSearch.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/characterVoice.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/characterVoice.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/chart.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/contentSecurityPolicy.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/contentSecurityPolicy.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/conversationEvents.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/conversationEvents.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/conversationList.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/conversationList.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/conversationLog.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/conversationLog.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/cycleGuide.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/cycleGuide.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/cycles.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/cycles.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/dashboard.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/dashboard.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/dataPackage.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/dataPackage.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/exemptingKeys.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/exemptingKeys.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/failure.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/failure.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/gifts.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/gifts.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/holidays.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/imageColor.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/imageColor.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/linePacing.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/listPreferences.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/listPreferences.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/liveConversation.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/liveConversation.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/llmProviders.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/llmProviders.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/localOwnKeys.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/localOwnKeys.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/memories.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/memories.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/messageLines.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/messageLines.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/microphone.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/microphone.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/navShell.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/navShell.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/panelSizes.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/panelSizes.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/pastConversations.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/photoFailure.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/photoFailure.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/playCards.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/playCards.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/playRoute.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/playRoute.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/producerProfile.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/producerProfile.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/reasoningEffort.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/reasoningEffort.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/repository.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/rewards.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/rewards.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/schedule.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/schedule.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/seenOnDevice.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/seenOnDevice.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/serviceStatus.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/serviceStatus.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/settingsCategory.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/settingsCategory.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/shareCard.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/shareCard.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/signIn.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/signIn.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standAnimations.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standAnimations.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standDirection.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standDirection.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standFrames.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standFrames.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standOutfit.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/standOutfit.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/stats.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/stats.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/timestamp.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/timestamp.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/timezone.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/timezone.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/utils.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/lib/utils.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/proxy.ts",
+          "status": "not-copied"
+        },
+        {
+          "path": "src/theme/GitHubIcon.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/theme/herVars.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/theme/herVars.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/theme/icons.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/theme/Ja.tsx",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/theme/themeContrast.test.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "src/theme/themeCss.ts",
+          "status": "same-bytes"
+        },
+        {
+          "path": "tsconfig.json",
+          "status": "same-bytes"
+        },
+        {
+          "path": "vitest.config.mts",
+          "status": "same-bytes"
+        }
+      ]
+    }
+  ]
+}

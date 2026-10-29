@@ -1,0 +1,18 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-009 / 鹈鹕杯
+tihu-artist
+
+语言：未指定语言
+最近推送：2026-09-23
+仓库：Herz1/tihu-artist
+状态：初始记录
+
+以“鹈鹕杯”为简介的项目记录。目前公开入口主要为 README 与仓库信息。
+
+项目说明
+1. 保留原始项目名称与仓库入口。
+2. 当前仓库尚未提供完整功能说明或在线预览。
+
+源码：https://github.com/Herz1/tihu-artist
+
+公开数据同步：2026-10-29T18:18:43.907Z

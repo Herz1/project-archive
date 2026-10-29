@@ -1,0 +1,18 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-011 / 静态资源
+static.resource
+
+语言：未指定语言
+最近推送：2024-10-12
+仓库：Herz1/static.resource
+状态：资源归档
+
+公开静态资源仓库，当前未填写具体用途说明。
+
+项目说明
+1. 按公开仓库元数据收录。
+2. 未配置独立预览地址，完整内容以仓库文件为准。
+
+源码：https://github.com/Herz1/static.resource
+
+公开数据同步：2026-10-29T18:18:43.907Z

@@ -1,0 +1,18 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-010 / Hexo 主题 Fork
+hexo-theme-sungod
+
+语言：未指定语言
+最近推送：2026-10-07
+仓库：Herz1/hexo-theme-sungod
+状态：Fork 收藏 · Fork
+
+定制化 Hexo 博客主题的 Fork 仓库；保留原项目与 Apache-2.0 许可信息。
+
+项目说明
+1. 本项目明确标记为 Fork，不作为完全原创主题展示。
+2. 仓库填写的主页为上游站点，因此本档案不将其列为个人 Demo。
+
+源码：https://github.com/Herz1/hexo-theme-sungod
+
+公开数据同步：2026-10-29T18:18:43.907Z

@@ -1,0 +1,14 @@
+{
+  "source": "Sallyn0225/eidolon-sc/frontend",
+  "revision": "cd1c61751eddeaf1bd4cdef4133e5e67f3af4ec5",
+  "immutableSource": ".agents/skills/rhine-eidolon-preserve/assets/upstream/eidolon/frontend",
+  "applied": [
+    "Public project roster replaces backend characters",
+    "Personal content, real links and attribution replace login/conversation entry",
+    "Original eight acts, timelines, light shaders, phone and island scenes retained",
+    "Static Next export and GitHub Pages base path",
+    "Original Noto font families subset for new Chinese content",
+    "Missing voxel assets settle to original procedural fallback without rejected promises"
+  ],
+  "license": "AGPL-3.0-or-later; original asset licenses retained"
+}

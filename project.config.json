@@ -2,9 +2,10 @@
   "githubOwner": "Herz1",
   "repository": "Herz1/project-archive",
   "visibility": "public",
-  "stage": "source-preservation-kit",
+  "stage": "personal-project-homepage",
   "skill": ".agents/skills/rhine-eidolon-preserve",
   "websiteDirectory": "website",
-  "websiteStarted": false,
+  "websiteStarted": true,
+  "websiteUrl": "https://herz1.github.io/project-archive/",
   "designPriority": "Preserve substantial original source and effects; adapt data and integration seams first."
 }

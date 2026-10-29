@@ -1,0 +1,18 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-008 / JRPG 制作工程
+Game
+
+语言：TypeScript
+最近推送：2026-10-07
+仓库：Herz1/Game
+状态：制作工程
+
+以 HD-2D 日式幻想 JRPG 为目标的制作工程，集中维护策划、叙事、美术、技术、测试与交接材料。
+
+项目说明
+1. 项目将产品目标、玩法、世界观、美术、技术和验收文档分开维护。
+2. 仓库包含 src、assets、build 与 tests；当前未配置公开试玩地址。
+
+源码：https://github.com/Herz1/Game
+
+公开数据同步：2026-10-29T18:18:43.907Z

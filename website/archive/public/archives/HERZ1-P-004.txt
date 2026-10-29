@@ -1,0 +1,19 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-004 / 幻想郷通信
+hrez1yun
+
+语言：JavaScript
+最近推送：2026-10-27
+仓库：Herz1/hrez1yun
+状态：在线可访问
+
+东方 Project 风格的纯静态个人博客，以幻想乡、昼夜场景、弹幕和细腻的阅读交互组织日常记录。
+
+项目说明
+1. 零构建、零依赖；本地与静态托管保持一致的访问体验。
+2. 昼夜场景、环境弹幕、桌宠、标签归档与独立文章页。
+
+源码：https://github.com/Herz1/hrez1yun
+在线演示：https://herz1.github.io/hrez1yun/
+
+公开数据同步：2026-10-29T18:18:43.907Z

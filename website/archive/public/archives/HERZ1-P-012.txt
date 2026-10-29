@@ -1,0 +1,18 @@
+﻿HERZ1 · PUBLIC PROJECT ARCHIVE
+P-012 / Pages 学习
+skills-github-pages
+
+语言：未指定语言
+最近推送：2025-12-02
+仓库：Herz1/skills-github-pages
+状态：学习记录
+
+以 GitHub Pages 为主题的学习仓库，保留公开代码与学习入口。
+
+项目说明
+1. 仓库当前简介为 My clone repository。
+2. 本档案提供源仓库入口，不将其误标为已上线的独立产品。
+
+源码：https://github.com/Herz1/skills-github-pages
+
+公开数据同步：2026-10-29T18:18:43.907Z

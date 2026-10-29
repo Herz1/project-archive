@@ -1,0 +1,61 @@
+name: Build and deploy project homepage
+on:
+  push:
+    branches: [main]
+    paths: ["website/**", "scripts/**", "tests/**", "package.json", ".github/workflows/deploy-website.yml"]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: |
+            website/intro/package-lock.json
+            website/archive/package-lock.json
+      - name: Check original source snapshots
+        run: npm run verify
+      - name: Refresh public repository metadata
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run sync:projects
+      - name: Install original locked dependencies
+        run: npm run setup:website
+      - name: Build both preserved experiences
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+        run: npm run build:website
+      - name: Check project identity, variable archive navigation and static routes
+        run: npm run test:website
+      - name: Check project font coverage
+        working-directory: website/intro
+        run: npm exec vitest run 'src/app/(landing)/fonts/coverage.test.ts'
+      - uses: actions/configure-pages@v6.0.0
+      - uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: website/dist
+          include-hidden-files: "true"
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish homepage
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1

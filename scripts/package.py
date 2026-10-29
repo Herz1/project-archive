@@ -11,7 +11,7 @@ parser.add_argument("--output", type=Path, default=repo / "dist")
 args = parser.parse_args()
 output = args.output.resolve()
 output.mkdir(parents=True, exist_ok=True)
-ignored = {".git", "node_modules", "work", "dist", "__pycache__"}
+ignored = {".git", "node_modules", "work", "dist", "__pycache__", ".next", "out", ".cache", ".vite", "test-results", "playwright-report"}
 
 def inputs(root):
     for path in sorted(root.rglob("*")):
